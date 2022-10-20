@@ -27,7 +27,7 @@ As the communication between Elasticsearch and metricbeat is using tls, you need
 
 a. Copy the CA certificate from one of Elasticsearch containers
 First, you run `docker ps` to find the CONTAINER ID of the elasticsearch, then past in this command.     
-![image](https://user-images.githubusercontent.com/75282285/197023313-a16995b4-eaf0-446e-8ca2-86263145f8b1.png)      
+![image](https://user-images.githubusercontent.com/75282285/197023313-a16995b4-eaf0-446e-8ca2-86263145f8b1.png | width=100)      
 If it is 3d6b1762e254, then write such as:    
 ```
 docker exec -it 3d6b1762e254 openssl x509 -fingerprint -sha256 -in /usr/share/elasticsearch/config/certs/ca/ca.crt
