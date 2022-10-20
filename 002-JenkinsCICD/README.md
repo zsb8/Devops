@@ -26,7 +26,7 @@ docker-compose up -d
 ```
 ![image](https://user-images.githubusercontent.com/75282285/197062611-663e9413-4f07-4da2-b43b-e573ae691240.png)
 
-2. Open your **browser** and go to the Jenkins UI website (http://<JenkinsHostIP>). If you install the Jenkins in your local host, you can go [here](http://0.0.0.0). Login to the Jenkins with the username/password defined in your `docker-compose.yaml`.
+2. Open your **browser** and go to the Jenkins UI website (http://192.168.1.164). If you install the Jenkins in your local host, you can go [here](http://127.0.0.1). Login to the Jenkins with the username/password defined in your `docker-compose.yaml`.
 
 3. Go to **"Manage Jenkins"** in the left lane and go to **"Manage Plugins"**. Click **"Available"** tab in the **"Plugin Manager"** page and type **"pipeline"** in the search bar. Select **"Pipeline"** and click **"Download now and install after restart"**.
 
