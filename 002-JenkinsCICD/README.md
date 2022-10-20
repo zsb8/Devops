@@ -82,7 +82,9 @@ docker run -d -p 8080:8080 --name color-web color-web:init
 docker exec <jenkinsContainerID> chmod 777 /var/run/docker.sock
 ```
 
-8. You should be able to see the hello world page in [here](http://localhost:8080)
+8. You should be able to see the hello world page in [here](http://192.168.1.164:8080)
+![image](https://user-images.githubusercontent.com/75282285/197078170-3a12f2d4-83a7-4375-bb40-e6c14b746eb3.png)
+
 
 9. Make a change into `app.py`. For example, change "Hello world" to "Hello world 2". And then click "Build" again to trigger the pipeline to deploy the change. Once it is done, you should be able to see your change in [here](http://localhost:8080)
 
