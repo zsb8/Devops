@@ -49,7 +49,7 @@ check it
 
     b. **"SCM"**: select "Git" 
 
-    c. **"Repository URL"**: Enter the URL of the repo which has Jenkinsfile, for example, https://github.com/chance2021/devopsdaydayup. (Note: You can fork "devopsdaydayup" repo to your github account and enter the URL accordingly)
+    c. **"Repository URL"**: Enter the URL of the repo which has Jenkinsfile, for example, [https://github.com/zsb8/devopsdaydayup](https://github.com/zsb8/devopsdaydayup). (Note: You can fork "devopsdaydayup" repo to your github account and enter the URL accordingly)
 
     d. **"Credentials"**: If you don't have any credential, click "Add" -> "Jenkins", in "Kind" field select "Username with password". In "Scope" field select "Global(Jenkins, nodes, items, all child items, etc)". In "Username", type your github account username. In "Password", type your github account token. 
 
