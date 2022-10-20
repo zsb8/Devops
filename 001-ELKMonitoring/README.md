@@ -37,6 +37,7 @@ You will see the CA certificate content.
 
 
 b.  Go to the host which you want to monitor and run below command:
+We will place the Elasticsearch's public certification to the trust host's ca folder, then this host can communicate with Elasticsearch server by TLS.
 ```
 sudo apt-get install -y ca-certificates
 cd /usr/local/share/ca-certificates/
