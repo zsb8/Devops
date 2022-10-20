@@ -74,6 +74,7 @@ Save above change.
 docker build -t color-web:init .
 docker run -d -p 8080:8080 --name color-web color-web:init
 ```
+![image](https://user-images.githubusercontent.com/75282285/197077813-6c572a99-7ef6-4eed-a5a5-e8c9b69989bf.png)
 
 7. Click **"Build"** to trigger your first pipeline
 > Note: If you encounter with any docker execute permission issue, you may need to run below command to apply a proper permission on `docker.sock` 
