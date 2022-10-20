@@ -32,6 +32,7 @@ If it is 3d6b1762e254, then write such as:
 ```
 docker exec -it 3d6b1762e254 openssl x509 -fingerprint -sha256 -in /usr/share/elasticsearch/config/certs/ca/ca.crt
 ```
+You will see the CA certificate content.
 ![image](https://user-images.githubusercontent.com/75282285/197024320-97ababa7-2227-4360-bf45-78b8ad4e0db2.png)
 
 
