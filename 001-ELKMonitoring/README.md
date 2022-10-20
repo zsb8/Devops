@@ -77,7 +77,7 @@ a. Open your browser and go to [http://0.0.0.0:5601/](http://0.0.0.0:5601/) (if 
 b. Click the menu icon in the top left and go to "Dashboard"
 
 c. Select "[Metricbeat System] Host overview ECS" and you should be able to see all metric data from your local host presented in the dashboard.
-![kibana](./images/1.jpg)
+![image](https://user-images.githubusercontent.com/75282285/197031785-4bf9962e-dbcb-4f31-b1ab-927c6afff948.png)
 ![kibana](./images/2.jpg)
 
 # Reference
