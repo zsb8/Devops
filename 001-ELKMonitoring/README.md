@@ -26,8 +26,12 @@ sudo docker-compose up -d
 As the communication between Elasticsearch and metricbeat is using tls, you need to add the Elasticsearch CA into the server which is going to be monitored.
 
 a. Copy the CA certificate from one of Elasticsearch containers
+First, you run `docker ps` to find the CONTAINER ID of the elasticsearch, then past in this command.     
+![image](https://user-images.githubusercontent.com/75282285/197023313-a16995b4-eaf0-446e-8ca2-86263145f8b1.png)
+If it is 3d6b1762e254, 
+then write such as:
 ```
-docker exec -it <elasticsearch 01> openssl x509 -fingerprint -sha256 -in /usr/share/elasticsearch/config/certs/ca/ca.crt
+docker exec -it 3d6b1762e254 openssl x509 -fingerprint -sha256 -in /usr/share/elasticsearch/config/certs/ca/ca.crt
 ```
 
 b.  Go to the host which you want to monitor and run below command:
