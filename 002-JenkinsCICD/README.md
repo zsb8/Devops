@@ -38,6 +38,8 @@ docker-compose up -d
  ![image](https://user-images.githubusercontent.com/75282285/197074173-a4e3c580-1c95-4cd5-afe0-161508e1d3a7.png)
 ![image](https://user-images.githubusercontent.com/75282285/197074358-9b155a71-32d9-4735-9c54-aabc3be26bec.png)
 ![image](https://user-images.githubusercontent.com/75282285/197074417-d3772790-31a7-4c6b-9226-f3958fd91d27.png)
+check it       
+![image](https://user-images.githubusercontent.com/75282285/197074612-b47d2086-fdb6-4568-9f32-8655cbd32e5d.png)
 
 
 5. Once the plugin is installed and the Jenkins is restarted, go to the main page of the Jenkins website and click **"New Item"** in the left. Type the name of your project (i.g. first-project) and select **"Pipeline"** and click **"OK"**. In the Configuration page, make sure below fields in **"Pipeline"** section are filled:
