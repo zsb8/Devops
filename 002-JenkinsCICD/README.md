@@ -54,6 +54,7 @@ check it
     d. **"Credentials"**: If you don't have any credential, click "Add" -> "Jenkins", in "Kind" field select "Username with password". In "Scope" field select "Global(Jenkins, nodes, items, all child items, etc)". In "Username", type your github account username. In "Password", type your github account token. 
 
     **Note**: In order to get a github token, you can go to your github account and select "Setting" once you click your account icon in the top right. Go to "Developer settings" in the very bottom left lane and go to "Personal access tokens", and then click "Generate new token" to create a new token for above step.
+![image](https://user-images.githubusercontent.com/75282285/197076823-0bc35501-6a42-4937-a5e2-172eb4b358af.png)
 
 
     e. **"ID"**: Enter the name of this credential, which will be referred in the Pipeline later. For example, github-token.
