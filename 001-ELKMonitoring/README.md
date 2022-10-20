@@ -16,8 +16,8 @@ https://www.elastic.co/training/free
 ## 1. Deploy a ELK stack
 Clone the github repo and run the docker compose to start up the ELK stack
 ```
-git clone https://github.com/chance2021/devopsdaydayup.git
-cd devopsdaydayup/001-ELKMonitoring
+git clone https://github.com/zsb8/Devops.git
+cd devops/001-ELKMonitoring
 sudo sysctl -w vm.max_map_count=262144
 sudo docker-compose up -d
 ```
