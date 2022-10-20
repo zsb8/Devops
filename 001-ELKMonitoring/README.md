@@ -9,7 +9,7 @@ https://www.elastic.co/training/free
 
 # Prerequisites
 - Ubuntu 20.04 OS     
-![image](https://user-images.githubusercontent.com/75282285/197020189-589d7cbe-6cc9-465f-ae6e-1c659076bcf5.png | width=100)
+![image](https://user-images.githubusercontent.com/75282285/197020189-589d7cbe-6cc9-465f-ae6e-1c659076bcf5.png width="200")
 
 - [Docker](https://docs.docker.com/engine/install/ubuntu/)      
 ![image](https://user-images.githubusercontent.com/75282285/197020301-53c735a4-8341-4012-aabb-f982a0876fe1.png  | width=100)
