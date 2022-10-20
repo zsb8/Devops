@@ -43,6 +43,7 @@ check it
 
 
 5. Once the plugin is installed and the Jenkins is restarted, go to the main page of the Jenkins website and click **"New Item"** in the left. Type the name of your project (i.g. first-project) and select **"Pipeline"** and click **"OK"**. In the Configuration page, make sure below fields in **"Pipeline"** section are filled:
+![image](https://user-images.githubusercontent.com/75282285/197074925-52498c66-cccd-4a6b-bfb4-ff72dce09a77.png)
 
     a. **"Definition"**: select "Pipeline script from SCM" 
 
