@@ -20,8 +20,8 @@ Understand how to setup/configure Jenkins as CICD pipeline. Familiarize with Jen
 # Project Steps <a name="project_steps"></a>
 1. Deploy a Jenkins docker container with **docker-compose**
 ```
-git clone https://github.com/chance2021/devopsdaydayup.git
-cd devopsdaydayup/002-JenkinsCICD
+git clone https://github.com/zsb8/Devops.git
+cd devops/002-JenkinsCICD
 docker-compose up -d
 ```
 ![image](https://user-images.githubusercontent.com/75282285/197062611-663e9413-4f07-4da2-b43b-e573ae691240.png)
