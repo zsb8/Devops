@@ -30,7 +30,9 @@ docker-compose up -d
 ![image](https://user-images.githubusercontent.com/75282285/197063165-7085353f-183d-499a-b66a-cb317462cea2.png)
 
 
-3. Go to **"Manage Jenkins"** in the left lane and go to **"Manage Plugins"**. Click **"Available"** tab in the **"Plugin Manager"** page and type **"pipeline"** in the search bar. Select **"Pipeline"** and click **"Download now and install after restart"**.
+3. Go to **"Manage Jenkins"** in the left lane and go to **"Manage Plugins"**. Click **"Available"** tab in the **"Plugin Manager"** page and type **"pipeline"** in the search bar. Select **"Pipeline"** and click **"Download now and install after restart"**.       
+![image](https://user-images.githubusercontent.com/75282285/197063479-15358a56-e114-44c3-8322-f20b0bc8d12f.png)
+
 
 4. Follow the same step above and install **"git"** and **"Docker Pipeline"** as plugins.
 
