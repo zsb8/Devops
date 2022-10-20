@@ -22,7 +22,7 @@ sudo sysctl -w vm.max_map_count=262144
 sudo docker-compose up -d
 ```
 
-## 2. Add Elasticsearch CA certificates
+## 2. Add Elasticsearch CA certificates     
 As the communication between Elasticsearch and metricbeat is using tls, you need to add the Elasticsearch CA into the server which is going to be monitored.
 
 a. Copy the CA certificate from one of Elasticsearch containers
@@ -36,7 +36,7 @@ You will see the CA certificate content.
 ![image](https://user-images.githubusercontent.com/75282285/197024320-97ababa7-2227-4360-bf45-78b8ad4e0db2.png)
 
 
-b.  Go to the host which you want to monitor and run below command:
+b.  Go to the host which you want to monitor and run below command:       
 We will place the Elasticsearch's public certification to the trust host's ca folder, then this host can communicate with Elasticsearch server by TLS.
 ```
 sudo apt-get install -y ca-certificates
