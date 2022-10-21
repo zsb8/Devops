@@ -96,6 +96,9 @@ docker exec <jenkinsContainerID> chmod 777 /var/run/docker.sock
 
 
 9. Make a change into `app.py`. For example, change "Hello world" to "Hello world 2". And then click "Build" again to trigger the pipeline to deploy the change. Once it is done, you should be able to see your change in [here](http://localhost:8080)
+![image](https://user-images.githubusercontent.com/75282285/197089040-180b9f4d-fbad-4904-a9b0-d92a85b49266.png)
+
+![image](https://user-images.githubusercontent.com/75282285/197088969-cf2f649c-f58f-486a-bb1c-53d01007dcee.png)
 
 # Troubleshooting <a name="troubleshooting"></a>
 ## Issue 1:  No such property: docker for class
