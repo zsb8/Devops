@@ -71,6 +71,10 @@ Notes! Then, I need to go to my repo(such as https://github.com/zsb8/Devops.git)
 
 Save above change.
 
+Then go to the code file (002-JenkinsCICD/Jenkinsfile), update it to the same items as you set.
+![image](https://user-images.githubusercontent.com/75282285/197087862-754cb126-4ea0-436a-ba8e-dfc5650f9b04.png)
+
+
 6. Run a container **before** trigger your pipeline
 ```
 docker build -t color-web:init .
