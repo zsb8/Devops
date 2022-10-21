@@ -59,7 +59,7 @@ Notes! Then, I need to go to my repo(such as https://github.com/zsb8/Devops.git)
 ![image](https://user-images.githubusercontent.com/75282285/197086704-fb7b7d12-93a7-477c-9cea-1bbcb8f6d433.png)
 
 
-    e. **"ID"**: Enter the name of this credential, which will be referred in the Pipeline later. For example, github-token.
+    e. **"ID"**: Enter the name of this credential, which will be referred in the Pipeline later. For example, zsb8token.
 
     f. **"Branch Specifier (blank for 'any')"**: Enter the branch which has your Jenkinsfile, for example, `*/main`
 
@@ -67,7 +67,7 @@ Notes! Then, I need to go to my repo(such as https://github.com/zsb8/Devops.git)
 
     h. Unselect **"Lightweight checkout"**
 
-![JenkinsPipeline](images/jenkinspipeline.png)
+![image](https://user-images.githubusercontent.com/75282285/197087433-27680006-3675-4c3f-a714-2a422d940fa9.png)
 
 Save above change.
 
