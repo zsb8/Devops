@@ -46,6 +46,7 @@ check it
 ![image](https://user-images.githubusercontent.com/75282285/197074925-52498c66-cccd-4a6b-bfb4-ff72dce09a77.png)
 
     a. **"Definition"**: select "Pipeline script from SCM" 
+![image](https://user-images.githubusercontent.com/75282285/197089896-2f3801a6-94b1-47ea-a428-cc1c01aaf5d3.png)
 
     b. **"SCM"**: select "Git" 
 
