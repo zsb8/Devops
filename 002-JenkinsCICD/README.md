@@ -52,6 +52,9 @@ check it
     c. **"Repository URL"**: Enter the URL of the repo which has Jenkinsfile, for example, [https://github.com/zsb8/devopsdaydayup](https://github.com/zsb8/devopsdaydayup). (Note: You can fork "devopsdaydayup" repo to your github account and enter the URL accordingly)
 
     d. **"Credentials"**: If you don't have any credential, click "Add" -> "Jenkins", in "Kind" field select "Username with password". In "Scope" field select "Global(Jenkins, nodes, items, all child items, etc)". In "Username", type your github account username. In "Password", type your github account token. 
+    Notes! The "Password" is not your Github password, it really is your token which you set in your Github account and has the time expiration.
+    ![image](https://user-images.githubusercontent.com/75282285/197088182-180504e5-8ea9-40aa-9b24-247c21014ab8.png)
+
 
     **Note**: In order to get a github token, you can go to your github account and select "Setting" once you click your account icon in the top right. Go to "Developer settings" in the very bottom left lane and go to "Personal access tokens", and then click "Generate new token" to create a new token for above step. The permission, you choose repo and write permission at least.     
 ![image](https://user-images.githubusercontent.com/75282285/197076823-0bc35501-6a42-4937-a5e2-172eb4b358af.png)
