@@ -29,7 +29,7 @@ Once it is done, open your **browser** and go to https://<your_gitlab_domain_nam
 ```
 <GITLAB SERVER IP>  <YOUR DOMAIN NAME in docker-compose.yaml> 
 # For example
-# 192.168.2.61 gitlab.chance20221020.com registry.gitlab.chance20221020.com
+# 192.168.2.61 gitlab.chance20221028.com registry.gitlab.chance20221028.com
 ```
 
 ## 3. Login to your gitlab web.
