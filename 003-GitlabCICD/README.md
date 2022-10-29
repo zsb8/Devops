@@ -55,6 +55,11 @@ Then Click your project, go to "Settings" -> "CI/CD" -> expand "Runners" section
 Make a note of Token as `GR1348941kL9sGnMECpYDKEgXMwj9`.
 
 ## 4. Update certificates
+The contain 'gitlab/gitlab-ce:latest' named web, so you run `docker ps -f name=web`, will point to the gitlab/gitlab-ce.
+```bash
+docker ps -f name=web -q
+```
+
 Since the initial Gitlab server **certificate** is missing some info and cannot be used by Gitlab runner, we may have to **regenerate** a new one and **reconfigure** in the Gitlab server. Run below commands:
 ```bash
 docker exec -it $(docker ps -f name=web -q) bash
