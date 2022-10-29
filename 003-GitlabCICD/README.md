@@ -62,8 +62,6 @@ mv /etc/gitlab/ssl/* /etc/gitlab/ssl_backup
 cd /etc/gitlab/ssl
 openssl genrsa -out ca.key 2048
 openssl req -new -x509 -days 365 -key ca.key -subj "/C=CN/ST=GD/L=SZ/O=Acme, Inc./CN=Acme Root CA" -out ca.crt
-
-
 ```
 
 ![image](https://user-images.githubusercontent.com/75282285/198835693-4c8a130c-839c-4f09-8d09-274583d016ca.png)
@@ -79,7 +77,6 @@ openssl x509 -req -extfile <(printf "subjectAltName=DNS:$YOUR_GITLAB_DOMAIN,DNS:
 # Certificate for nginx (container registry)
 openssl req -newkey rsa:2048 -nodes -keyout registry.gitlab.$YOUR_GITLAB_DOMAIN.key -subj "/C=CN/ST=GD/L=SZ/O=Acme, Inc./CN=*.$YOUR_GITLAB_DOMAIN" -out registry.gitlab.$YOUR_GITLAB_DOMAIN.csr
 openssl x509 -req -extfile <(printf "subjectAltName=DNS:$YOUR_GITLAB_DOMAIN,DNS:gitlab.$YOUR_GITLAB_DOMAIN,DNS:registry.gitlab.$YOUR_GITLAB_DOMAIN") -days 365 -in registry.gitlab.$YOUR_GITLAB_DOMAIN.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out registry.gitlab.$YOUR_GITLAB_DOMAIN.crt
-
 exit
 ```
 ![image](https://user-images.githubusercontent.com/75282285/198835798-11a157b4-78ad-4008-9c9a-6c32fbe4b526.png)
@@ -120,6 +117,8 @@ gitlab-ctl reconfigure
 gitlab-ctl restart
 exit
 ```
+![image](https://user-images.githubusercontent.com/75282285/198836412-a6ef70bf-03e3-452e-bd66-06285acb1bc8.png)
+
 ## 6. Update certificates for docker client
 In order to make **docker login** work, you need to add the **certificate** in docker certs folder
 ```
