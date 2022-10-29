@@ -156,6 +156,8 @@ Run `docker build -t registry.gitlab.chance20221020.com:5005/gitlab-instance-80b
 Run `docker push registry.gitlab.chance20221020.com:5005/gitlab-instance-80b162cc/cicd`  :
 ![image](https://user-images.githubusercontent.com/75282285/198845999-0005c561-519f-47b6-bb8c-b8728190d040.png)
 
+Login to your Gitlab server web UI and go to the project you created, and then go to "Packages and registries" -> "Container Registry", you should be able to see the valid registry.    
+![image](https://user-images.githubusercontent.com/75282285/198846348-796ec854-5853-43cf-a47b-4c6bb8b946d1.png)
 
 ## 7. Configure **gitlab-runner** 
 Login to gitlab-runner and run commands below:
