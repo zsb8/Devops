@@ -19,10 +19,11 @@ Understand how to setup/configure Gitlab as CICD pipeline. Familarize with gitla
 # <a name="project_steps">Project Steps</a>
 ## 1. Run the docker containers with **docker-compose**
 ```bash
-git clone https://github.com/chance2021/devopsdaydayup.git
+git clone https://github.com/zsb8/Devops.git
 cd devopsdaydayup/003-GitlabCICD
 docker-compose up -d
 ```
+![image](https://user-images.githubusercontent.com/75282285/198853775-33b6826a-c406-42b9-a309-81d03dbc754a.png)
 
 ## 2. Add below entry in your **hosts** file (i.g. `/etc/hosts`). 
 Once it is done, open your **browser** and go to https://<your_gitlab_domain_name>  (i.g. https://gitlab.chance20221020.com/)
