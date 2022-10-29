@@ -82,6 +82,7 @@ openssl x509 -req -extfile <(printf "subjectAltName=DNS:$YOUR_GITLAB_DOMAIN,DNS:
 
 exit
 ```
+![image](https://user-images.githubusercontent.com/75282285/198835798-11a157b4-78ad-4008-9c9a-6c32fbe4b526.png)
 
 
 ## 5. Enable **container register** 
