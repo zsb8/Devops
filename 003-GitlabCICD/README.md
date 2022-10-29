@@ -131,17 +131,22 @@ export YOUR_GITLAB_DOMAIN=chance20221020.com
 sudo mkdir -p /etc/docker/certs.d/registry.gitlab.$YOUR_GITLAB_DOMAIN:5005
 sudo docker cp $(docker ps -f name=web -q):/etc/gitlab/ssl/registry.gitlab.$YOUR_GITLAB_DOMAIN.crt /etc/docker/certs.d/registry.gitlab.$YOUR_GITLAB_DOMAIN:5005/
 sudo ls /etc/docker/certs.d/registry.gitlab.$YOUR_GITLAB_DOMAIN:5005
+~~~
+![image](https://user-images.githubusercontent.com/75282285/198836974-3695efc8-38dc-43f5-8c8b-7d17c61fde51.png)
 
+~~~
 # Test docker login and you should be able to login now
 docker login registry.gitlab.$YOUR_GITLAB_DOMAIN:5005
 Username: root
-Password: 
+Password: changeme
+~~~
+You will see:
 WARNING! Your password will be stored unencrypted in /home/chance/.docker/config.json.
 Configure a credential helper to remove this warning. See
 https://docs.docker.com/engine/reference/commandline/login/#credentials-store
-
 Login Succeeded
-
+![image](https://user-images.githubusercontent.com/75282285/198837064-43607368-4b8f-4bfe-bdc5-ed18fda89655.png)
+~~~
 # You can also test if the docker image push works once login successfully
 # Login to your gitlab server web UI and go to the project you created, and then go to "Packages and registries" -> "Container Registry", you should be able to see the valid registry URL you suppose to use in order to build and push your image. For example, `docker build -t registry.gitlab.chance20221020.com:5005/gitlab-instance-d350f73c/first-projct .` (See below screenshot)
 
