@@ -118,6 +118,7 @@ gitlab-ctl restart
 exit
 ```
 ![image](https://user-images.githubusercontent.com/75282285/198836412-a6ef70bf-03e3-452e-bd66-06285acb1bc8.png)
+Run ~gitlab-ctl reconfigure~ command.
 ![image](https://user-images.githubusercontent.com/75282285/198836475-cc0cb499-afbf-4fd0-8b7d-0e2813a6feac.png)
 
 ## 6. Update certificates for docker client
