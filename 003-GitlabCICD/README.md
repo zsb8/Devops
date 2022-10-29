@@ -150,6 +150,12 @@ You can also test if the docker image push works once login successfully.
 Login to your Gitlab server web UI and go to the project you created, and then go to "Packages and registries" -> "Container Registry", you should be able to see the valid registry URL you suppose to use in order to build and push your image. For example, `docker build -t registry.gitlab.chance20221020.com:5005/gitlab-instance-80b162cc/cicd .` (cicd is your project name which was defined before) (See below screenshot)     
 ![image](https://user-images.githubusercontent.com/75282285/198839056-7379ff32-1832-4153-b601-510dc71c0f63.png)
 
+Run `docker build -t registry.gitlab.chance20221020.com:5005/gitlab-instance-80b162cc/cicd .`:  
+![image](https://user-images.githubusercontent.com/75282285/198845941-737371c0-c4b4-4be6-b077-d8c994252262.png)
+
+Run `docker push registry.gitlab.chance20221020.com:5005/gitlab-instance-80b162cc/cicd`  :
+![image](https://user-images.githubusercontent.com/75282285/198845999-0005c561-519f-47b6-bb8c-b8728190d040.png)
+
 
 ## 7. Configure **gitlab-runner** 
 Login to gitlab-runner and run commands below:
