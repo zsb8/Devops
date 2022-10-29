@@ -229,14 +229,15 @@ cp /path/to/devopsdaydayup/003-GitlabCICD/{app.py,Dockerfile,requirements.txt}  
 
 ```bash
 git add .
-git commit -am "First commit"
+git commit -am "First"
 git push
 ```
 ![image](https://user-images.githubusercontent.com/75282285/198847894-aa246d31-74c2-4739-9e4e-3e81a517cb0e.png)
+![image](https://user-images.githubusercontent.com/75282285/198848107-9ff69ef8-4e2a-4d39-acc0-21fce9ca8d67.png)
 
 Once you push the code, you should be able to see the pipeline is automatically triggered under the project -> "CI/CD" -> "Jobs"
 ![gitlab-ci-pipeline](images/gitlab-ci-pipeline.png)
-![image](https://user-images.githubusercontent.com/75282285/198848107-9ff69ef8-4e2a-4d39-acc0-21fce9ca8d67.png)
+
 
 ## 9. Verification
 
