@@ -216,7 +216,7 @@ root@bad518d25b44:/usr/local/share/ca-certificates# cat /etc/gitlab-runner/confi
 ```bash
 git clone <URL from your gitlab server repo>
 ```
-![image](https://user-images.githubusercontent.com/75282285/198846789-eda2b010-fdd4-4c83-9ef6-7a7247c0e6e7.png)
+![image](https://user-images.githubusercontent.com/75282285/198847608-c5a7c872-fd8f-4536-a61b-6f82dc0fbce1.png)
 
 ```bash 
 cd <your project name folder>
