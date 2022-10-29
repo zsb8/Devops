@@ -192,11 +192,15 @@ If success, you will see below message:
 Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
 
 Configuration (with the authentication token) was saved in "/etc/gitlab-runner/config.toml" 
-root@bad518d25b44:/usr/local/share/ca-certificates# cat /etc/gitlab-runner/config.toml 
+
 ```
 Once you finish above step, you should be able to see an available running in the project's CICD Runners section (see below screenshoot).
 ![image](https://user-images.githubusercontent.com/75282285/198841474-c307e709-9b87-4d60-b97c-b86fda9599ff.png)
 
+```bash
+root@bad518d25b44:/usr/local/share/ca-certificates# cat /etc/gitlab-runner/config.toml 
+```
+![image](https://user-images.githubusercontent.com/75282285/198841856-60ba0f29-8123-41e8-a73e-070b50ae8a7d.png)
 ## 8. Copy necessary files into gitlab project repo.
 **Git clone** from your gitlab project repo to your local and copy necessary files from our devopsdaydayup lab repo (in the same folder as this README.md)
 ```
