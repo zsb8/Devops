@@ -26,7 +26,7 @@ docker-compose up -d
 
 ## 2. Add below entry in your **hosts** file (i.g. `/etc/hosts`). 
 Once it is done, open your **browser** and go to https://<your_gitlab_domain_name>  (i.g. https://gitlab.chance20221020.com/)
-```
+```bash
 <GITLAB SERVER IP>  <YOUR DOMAIN NAME in docker-compose.yaml> 
 # For example
 # 192.168.2.61 gitlab.chance20221020.com registry.gitlab.chance20221020.com
@@ -63,11 +63,9 @@ cd /etc/gitlab/ssl
 openssl genrsa -out ca.key 2048
 openssl req -new -x509 -days 365 -key ca.key -subj "/C=CN/ST=GD/L=SZ/O=Acme, Inc./CN=Acme Root CA" -out ca.crt
 ```
-
 ![image](https://user-images.githubusercontent.com/75282285/198835693-4c8a130c-839c-4f09-8d09-274583d016ca.png)
 
-
-```
+```bash
 # Note: Make sure to replace below `YOUR_GITLAB_DOMAIN` with your own domain name. For example, chance20221020.com.
 
 export YOUR_GITLAB_DOMAIN=chance20221020.com
