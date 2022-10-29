@@ -170,7 +170,10 @@ gitlab-runner register
 
 Enter the registration token:
 <Paste the token retrieved in Step 3>
+```
+![image](https://user-images.githubusercontent.com/75282285/198841314-12153e70-48d2-4bef-bba0-89ab115aaa64.png)
 
+```bash
 Enter a description for the runner:
 [bad518d25b44]: test
 
