@@ -119,7 +119,8 @@ exit
 ```
 ![image](https://user-images.githubusercontent.com/75282285/198836412-a6ef70bf-03e3-452e-bd66-06285acb1bc8.png)
 Run `gitlab-ctl reconfigure` command.
-![image](https://user-images.githubusercontent.com/75282285/198836475-cc0cb499-afbf-4fd0-8b7d-0e2813a6feac.png)
+![image](https://user-images.githubusercontent.com/75282285/198836714-09d2b79b-07ad-49be-88b8-db7740462edb.png)
+![image](https://user-images.githubusercontent.com/75282285/198836715-070380c4-1c4c-4b1f-a4ec-112ffc77d56f.png)
 
 ## 6. Update certificates for docker client
 In order to make **docker login** work, you need to add the **certificate** in docker certs folder
