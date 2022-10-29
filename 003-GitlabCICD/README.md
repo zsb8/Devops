@@ -66,9 +66,8 @@ openssl req -new -x509 -days 365 -key ca.key -subj "/C=CN/ST=GD/L=SZ/O=Acme, Inc
 ```
 ![image](https://user-images.githubusercontent.com/75282285/198835693-4c8a130c-839c-4f09-8d09-274583d016ca.png)
 
+Note: Make sure to replace below `YOUR_GITLAB_DOMAIN` with your own domain name. For example, chance20221020.com.
 ```bash
-# Note: Make sure to replace below `YOUR_GITLAB_DOMAIN` with your own domain name. For example, chance20221020.com.
-
 export YOUR_GITLAB_DOMAIN=chance20221020.com
 openssl req -newkey rsa:2048 -nodes -keyout gitlab.$YOUR_GITLAB_DOMAIN.key -subj "/C=CN/ST=GD/L=SZ/O=Acme, Inc./CN=*.$YOUR_GITLAB_DOMAIN" -out gitlab.$YOUR_GITLAB_DOMAIN.csr
 openssl x509 -req -extfile <(printf "subjectAltName=DNS:$YOUR_GITLAB_DOMAIN,DNS:gitlab.$YOUR_GITLAB_DOMAIN") -days 365 -in gitlab.$YOUR_GITLAB_DOMAIN.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out gitlab.$YOUR_GITLAB_DOMAIN.crt
@@ -82,10 +81,10 @@ exit
 
 
 ## 5. Enable **container register** 
-Add below lines in the bottom of the file `/etc/gitlab/gitlab.rb`.
+Add below lines in the bottom of the file `/etc/gitlab/gitlab.rb`.   
+Note: Make sure to replace below `YOUR_GITLAB_DOMAIN` with your own domain name. For example, chance20221020.com.    
 ```bash
 docker exec -it $(docker ps -f name=web -q) bash
-# Note: Make sure to replace below `YOUR_GITLAB_DOMAIN` with your own domain name. For example, chance20221020.com
 export YOUR_GITLAB_DOMAIN=chance20221020.com
 cat >> /etc/gitlab/gitlab.rb <<EOF
 
