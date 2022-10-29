@@ -54,7 +54,7 @@ Then Click your project, go to "Settings" -> "CI/CD" -> expand "Runners" section
 
 
 ## 4. Update certificates
-Since the initial Gitlab server **certificate** is missing some info and cannot be used by gitlab runner, we may have to **regenerate** a new one and **reconfigure** in the gitlab server. Run below commands:
+Since the initial Gitlab server **certificate** is missing some info and cannot be used by Gitlab runner, we may have to **regenerate** a new one and **reconfigure** in the Gitlab server. Run below commands:
 ```bash
 docker exec -it $(docker ps -f name=web -q) bash
 mkdir /etc/gitlab/ssl_backup
