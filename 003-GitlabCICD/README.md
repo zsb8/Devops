@@ -195,7 +195,7 @@ Configuration (with the authentication token) was saved in "/etc/gitlab-runner/c
 root@bad518d25b44:/usr/local/share/ca-certificates# cat /etc/gitlab-runner/config.toml 
 ```
 Once you finish above step, you should be able to see an available running in the project's CICD Runners section (see below screenshoot).
-![gitlab-runner](images/gitlab-runner.jpg)
+![image](https://user-images.githubusercontent.com/75282285/198841474-c307e709-9b87-4d60-b97c-b86fda9599ff.png)
 
 ## 8. Copy necessary files into gitlab project repo.
 **Git clone** from your gitlab project repo to your local and copy necessary files from our devopsdaydayup lab repo (in the same folder as this README.md)
