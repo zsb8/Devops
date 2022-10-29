@@ -211,6 +211,9 @@ Once you finish above step, you should be able to see an available running in th
 root@bad518d25b44:/usr/local/share/ca-certificates# cat /etc/gitlab-runner/config.toml 
 ```
 ![image](https://user-images.githubusercontent.com/75282285/198841985-308fe721-4f34-4046-ac99-2a8f03108307.png)
+
+![image](https://user-images.githubusercontent.com/75282285/198847894-aa246d31-74c2-4739-9e4e-3e81a517cb0e.png)
+
 ## 8. Copy necessary files into Gitlab project repo.
 **git clone** from your Gitlab project repo to your local host and copy necessary files from our devopsdaydayup lab repo (in the same folder as this README.md)
 ```bash
