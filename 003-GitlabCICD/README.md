@@ -33,7 +33,7 @@ Once it is done, open your **browser** and go to https://<your_gitlab_domain_nam
 ```
 
 ## 3. Login to your gitlab web.
-Wait for about **5 mins** for the server to fully start up. Then login to the **Gitlab website (YOUR_GITLAB_SERVER_IP)  such as https://192.168.50.164)** with the username `root` and the password defined in your `docker-compose.yaml`, which should be the value for env varible `GITLAB_ROOT_PASSWORD`. <br/>
+Wait for about **5 mins** for the server to fully start up. Then login to the **Gitlab website (YOUR_GITLAB_SERVER_IP)  such as https://192.168.50.164)** with the username `root` and the password defined in my `docker-compose.yaml`, which should be the value for env varible `GITLAB_ROOT_PASSWORD`. <br/>
 ![image](https://user-images.githubusercontent.com/75282285/198740184-a41abb2a-4ef4-4477-9985-5f90bdb2e132.png)
 
 Click **"New project"** to create your first project -> Click **"Create blank project"** -> Type your project name in **"Project Name"** -> Select **"Public"** and click **"Create project"** -> Go to the new project you just created, and go to **"Setting"** -> **"CI/CD"** -> expand **"Runners"** section. **Make a note** of **"URL** and **registration token** in **"Specific runners"** section for below runner installation used
