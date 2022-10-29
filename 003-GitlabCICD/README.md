@@ -159,7 +159,10 @@ EOF
 cat > /usr/local/share/ca-certificates/registry.gitlab-server.crt <<EOF
 # <Paste above gitlab registry certificate here>
 EOF
+```
+![image](https://user-images.githubusercontent.com/75282285/198841098-c24e4189-12ea-4f95-9431-8b874d5f5bc5.png)
 
+```bash
 update-ca-certificates
 gitlab-runner register 
 # Enter the GitLab instance URL (for example, https://<YOUR_GITLAB_DOMAIN>(i.g. https://gitlab.chance20221020.com)
