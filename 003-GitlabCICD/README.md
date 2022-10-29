@@ -213,8 +213,12 @@ root@bad518d25b44:/usr/local/share/ca-certificates# cat /etc/gitlab-runner/confi
 ![image](https://user-images.githubusercontent.com/75282285/198841985-308fe721-4f34-4046-ac99-2a8f03108307.png)
 ## 8. Copy necessary files into Gitlab project repo.
 **git clone** from your Gitlab project repo to your local host and copy necessary files from our devopsdaydayup lab repo (in the same folder as this README.md)
-```
+```bash
 git clone <URL from your gitlab server repo>
+```
+![image](https://user-images.githubusercontent.com/75282285/198846789-eda2b010-fdd4-4c83-9ef6-7a7247c0e6e7.png)
+
+```bash 
 cd <your project name folder>
 cp /path/to/devopsdaydayup/003-GitlabCICD/{app.py,Dockerfile,requirements.txt}  <your gitlab repo>
 git add .
