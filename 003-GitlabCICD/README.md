@@ -49,7 +49,7 @@ Go to the "projects" main menu. <br/>
 Then Click your project, go to "Settings" -> "CI/CD" -> expand "Runners" section. <br/>
 ![image](https://user-images.githubusercontent.com/75282285/198833673-de973f51-7aec-4858-9c28-cb815bf5a2eb.png)
 
-**Make a note** of **"URL** and **registration token** in **"Specific runners"** section for below runner installation used <br/>
+**Make a note** of **URL** and **registration token** in **"Specific runners"** section for below runner installation used <br/>
 ![image](https://user-images.githubusercontent.com/75282285/198833765-8c2f25b7-5415-45eb-bea8-9ea7480b733e.png)
 
 Make a note of Token as `GR1348941kL9sGnMECpYDKEgXMwj9`.
