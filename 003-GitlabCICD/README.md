@@ -212,8 +212,6 @@ root@bad518d25b44:/usr/local/share/ca-certificates# cat /etc/gitlab-runner/confi
 ```
 ![image](https://user-images.githubusercontent.com/75282285/198841985-308fe721-4f34-4046-ac99-2a8f03108307.png)
 
-![image](https://user-images.githubusercontent.com/75282285/198847894-aa246d31-74c2-4739-9e4e-3e81a517cb0e.png)
-
 ## 8. Copy necessary files into Gitlab project repo.
 **git clone** from your Gitlab project repo to your local host and copy necessary files from our devopsdaydayup lab repo (in the same folder as this README.md)
 ```bash
@@ -221,15 +219,24 @@ git clone <URL from your gitlab server repo>
 ```
 ![image](https://user-images.githubusercontent.com/75282285/198847608-c5a7c872-fd8f-4536-a61b-6f82dc0fbce1.png)
 
+You need to at your project name folder (/home/devopsdaydayup/cicd) in the local host (192.168.50.164). 
+Then you copy the files from '003-GitlabCICD' folder to you current folder. 
 ```bash 
 cd <your project name folder>
 cp /path/to/devopsdaydayup/003-GitlabCICD/{app.py,Dockerfile,requirements.txt}  <your gitlab repo>
+```
+![image](https://user-images.githubusercontent.com/75282285/198848080-690b4f08-5df4-4bbc-b085-28b56f0fe194.png)
+
+```bash
 git add .
 git commit -am "First commit"
 git push
 ```
+![image](https://user-images.githubusercontent.com/75282285/198847894-aa246d31-74c2-4739-9e4e-3e81a517cb0e.png)
+
 Once you push the code, you should be able to see the pipeline is automatically triggered under the project -> "CI/CD" -> "Jobs"
 ![gitlab-ci-pipeline](images/gitlab-ci-pipeline.png)
+![image](https://user-images.githubusercontent.com/75282285/198848107-9ff69ef8-4e2a-4d39-acc0-21fce9ca8d67.png)
 
 ## 9. Verification
 
