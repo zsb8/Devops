@@ -59,6 +59,7 @@ The contain 'gitlab/gitlab-ce:latest' named web, so you run `docker ps -f name=w
 ```bash
 docker ps -f name=web -q
 ```
+![image](https://user-images.githubusercontent.com/75282285/198845581-cc271c65-d4c9-4fcd-863e-17b216999123.png)
 
 Since the initial Gitlab server **certificate** is missing some info and cannot be used by Gitlab runner, we may have to **regenerate** a new one and **reconfigure** in the Gitlab server. Run below commands:
 ```bash
