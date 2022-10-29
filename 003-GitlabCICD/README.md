@@ -305,10 +305,11 @@ When running the gitlab pipeline, the job gets stuck with below error
 This job is stuck because the project doesn't have any runners online assigned to it
 ```
 **Cause:**
-Check if any gitlab runner is online. If so, most likely the job is stuck because your unners have tags but your jobs don't.
+Check if any gitlab runner is online. If so, most likely the job is stuck because your runners have tags but your jobs don't.
 
 **Solution:**
 You need to enable your runner without tags. Go to your project and go to "Settings" -> "CI/CD" -> Click the online gitlab runner -> Check "Indicates whether this runner can pick jobs without tags". Then your pipeline should be able to pick this runner.
+![image](https://user-images.githubusercontent.com/75282285/198848333-73bf8f68-8516-490f-82fe-07f52f67d21d.png)
 
 > Refer to: https://stackoverflow.com/questions/53370840/this-job-is-stuck-because-the-project-doesnt-have-any-runners-online-assigned
 
