@@ -40,9 +40,9 @@ Wait for about **5 mins** for the server to fully start up. Then login to the **
 
 ![image](https://user-images.githubusercontent.com/75282285/198832537-9013e96c-bd3d-4e80-a7b7-b99cb80e8a03.png)
 
-Click **"New project"** to create your first project -> Click **"Create blank project"** -> Type your project name (such as 'CICD') in **"Project Name"** -> Select **"Public"** and click **"Create project"** -> Go to the new project you just created, and go to the "projects" main menu. <br/>
+Click **"New project"** to create your first project -> Click **"Create blank project"** -> Type your project name (such as 'CICD') in **"Project Name"** -> Select **"Public"** and click **"Create project"** -> Go to the new project you just created. <br/>
 ![image](https://user-images.githubusercontent.com/75282285/198832572-7e9165b0-ee2e-4d2a-ae5b-38aa02b43f39.png)    
-
+Go to the "projects" main menu. <br/>
 ![image](https://user-images.githubusercontent.com/75282285/198833579-e80a0a2d-1efc-492b-88ab-2ce66e0af625.png)
 
 
