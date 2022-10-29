@@ -32,7 +32,7 @@ Once it is done, open your **browser** and go to https://<your_gitlab_domain_nam
 # 192.168.2.61 gitlab.chance20221020.com registry.gitlab.chance20221020.com
 ```
 
-## 3. Login to your gitlab web.
+## 3. Login to your Gitlab web.
 Wait for about **5 mins** for the server to fully start up. Then login to the **Gitlab website (YOUR_GITLAB_SERVER_IP)  such as https://192.168.50.164)** with the username `root` and the password defined in my `docker-compose.yaml`, which should be the value for env varible `GITLAB_ROOT_PASSWORD`. <br/>
 ![image](https://user-images.githubusercontent.com/75282285/198832454-93ebe92e-756d-4ee7-ba93-2958a65b5218.png)
 
@@ -198,8 +198,8 @@ Once you finish above step, you should be able to see an available running in th
 root@bad518d25b44:/usr/local/share/ca-certificates# cat /etc/gitlab-runner/config.toml 
 ```
 ![image](https://user-images.githubusercontent.com/75282285/198841985-308fe721-4f34-4046-ac99-2a8f03108307.png)
-## 8. Copy necessary files into gitlab project repo.
-**Git clone** from your gitlab project repo to your local and copy necessary files from our devopsdaydayup lab repo (in the same folder as this README.md)
+## 8. Copy necessary files into Gitlab project repo.
+**git clone** from your Gitlab project repo to your local host and copy necessary files from our devopsdaydayup lab repo (in the same folder as this README.md)
 ```
 git clone <URL from your gitlab server repo>
 cd <your project name folder>
