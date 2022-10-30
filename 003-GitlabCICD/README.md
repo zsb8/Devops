@@ -201,6 +201,8 @@ Registering runner... succeeded                     runner=GR1348941Pjv5Qzaz
 Enter an executor: ssh, docker+machine, docker-ssh, docker, parallels, shell, virtualbox, docker-ssh+machine, kubernetes, custom:
 shell
 ```
+![image](https://user-images.githubusercontent.com/75282285/198860571-de08b17f-3dbd-4cb4-bd9d-56bd7f7069d8.png)
+
 If success, you will see below message:
 ```
 Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
