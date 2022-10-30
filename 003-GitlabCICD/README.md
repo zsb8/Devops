@@ -27,7 +27,7 @@ docker-compose up -d
 
 Test the simple web.      
 ![container-registry](images/198884547-02c087a3-58ee-4708-a18d-8e0f4b915a31.png)
-You can visit http://192.168.50.164:8080     
+You can visit the website http://192.168.50.164:8080     
 ![container-registry](images/198884576-b405f95a-95b7-4f73-8497-7176d8366b13.png)
 
 
@@ -255,8 +255,11 @@ Once you push the code, you should be able to see the pipeline is automatically 
 ## 9. Verification
 
   a. Check your hello-world container by visiting the **website** http://<HOST IP which is running the docker-compose.yaml>:8080 <br/>
-  b. In your **gitlab repo**, update `return "Hello World!"` in `app.py` file. For example, update to `return "Hello World 2022!"`. Save the change and `git add .` and `git commit -am "Update code"` and then `git push`.<br/> 
+  b. In your **gitlab repo**, update `return "Hello World!"` in `app.py` file. For example, update to `return "Hello World , ZSB is a good man!"`. Save the change and `git add .` and `git commit -am "Update code"` and then `git push`.<br/> 
+ ![image](https://user-images.githubusercontent.com/75282285/198884820-cd6d0263-4e0a-4650-bc21-97aec8d041d1.png)
+
   c. Once the CICD pipeline is completed, you can visit your hello-world web again to see if the content is changed. http://<HOST IP which is running the docker-compose.yaml>:8080 <br/>
+ 
 
 # <a name="post_project">Post Project</a>
 
