@@ -35,23 +35,22 @@ Once it is done, open your **browser** and go to https://<your_gitlab_domain_nam
 
 ## 3. Login to your Gitlab web.
 Wait for about **5 mins** for the server to fully start up. Then login to the **Gitlab website (YOUR_GITLAB_SERVER_IP)  such as https://192.168.50.164)** with the username `root` and the password defined in my `docker-compose.yaml`, which should be the value for env varible `GITLAB_ROOT_PASSWORD`. <br/>
-![image](https://user-images.githubusercontent.com/75282285/198832454-93ebe92e-756d-4ee7-ba93-2958a65b5218.png)
+![container-registry](images/198832454-93ebe92e-756d-4ee7-ba93-2958a65b5218.png)
+![container-registry](images/198740184-a41abb2a-4ef4-4477-9985-5f90bdb2e132.png)
+![container-registry](images/198832537-9013e96c-bd3d-4e80-a7b7-b99cb80e8a03.png)
 
-![image](https://user-images.githubusercontent.com/75282285/198740184-a41abb2a-4ef4-4477-9985-5f90bdb2e132.png)
-
-![image](https://user-images.githubusercontent.com/75282285/198832537-9013e96c-bd3d-4e80-a7b7-b99cb80e8a03.png)
 
 Click **"New project"** to create your first project -> Click **"Create blank project"** -> Type your project name (such as 'CICD') in **"Project Name"** -> Select **"Public"** and click **"Create project"** -> Go to the new project you just created. <br/>
-![image](https://user-images.githubusercontent.com/75282285/198832572-7e9165b0-ee2e-4d2a-ae5b-38aa02b43f39.png)    
+![container-registry](images/198832572-7e9165b0-ee2e-4d2a-ae5b-38aa02b43f39.png) 
 Go to the "projects" main menu. <br/>
-![image](https://user-images.githubusercontent.com/75282285/198833579-e80a0a2d-1efc-492b-88ab-2ce66e0af625.png)
+![container-registry](images/198833579-e80a0a2d-1efc-492b-88ab-2ce66e0af625.png)
 
 
 Then Click your project, go to "Settings" -> "CI/CD" -> expand "Runners" section. <br/>
-![image](https://user-images.githubusercontent.com/75282285/198833673-de973f51-7aec-4858-9c28-cb815bf5a2eb.png)
+![container-registry](images/198833673-de973f51-7aec-4858-9c28-cb815bf5a2eb.png)
 
 **Make a note** of **URL** and **registration token** in **"Specific runners"** section for below runner installation used <br/>
-![image](https://user-images.githubusercontent.com/75282285/198833765-8c2f25b7-5415-45eb-bea8-9ea7480b733e.png)
+![container-registry](images/198833765-8c2f25b7-5415-45eb-bea8-9ea7480b733e.pn)
 
 Make a note of Token as `GR1348941kL9sGnMECpYDKEgXMwj9`.
 
