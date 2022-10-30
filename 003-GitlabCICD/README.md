@@ -233,8 +233,9 @@ git add .
 git commit -am "First"
 git push
 ```
-![image](https://user-images.githubusercontent.com/75282285/198847894-aa246d31-74c2-4739-9e4e-3e81a517cb0e.png)
-![image](https://user-images.githubusercontent.com/75282285/198848107-9ff69ef8-4e2a-4d39-acc0-21fce9ca8d67.png)
+![image](https://user-images.githubusercontent.com/75282285/198859993-dc2cbe76-551c-4ee1-9aee-97a4379ee2f0.png)
+![image](https://user-images.githubusercontent.com/75282285/198859999-f79418ff-764e-4c78-9e07-a969a64b9776.png)
+
 
 Once you push the code, you should be able to see the pipeline is automatically triggered under the project -> "CI/CD" -> "Jobs"
 ![gitlab-ci-pipeline](images/gitlab-ci-pipeline.png)
