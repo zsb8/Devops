@@ -50,7 +50,7 @@ Then Click your project, go to "Settings" -> "CI/CD" -> expand "Runners" section
 ![container-registry](images/198833673-de973f51-7aec-4858-9c28-cb815bf5a2eb.png)
 
 **Make a note** of **URL** and **registration token** in **"Specific runners"** section for below runner installation used <br/>
-![container-registry](images/198833765-8c2f25b7-5415-45eb-bea8-9ea7480b733e.pn)
+![container-registry](images/198833765-8c2f25b7-5415-45eb-bea8-9ea7480b733e.png)
 
 Make a note of Token as `GR1348941kL9sGnMECpYDKEgXMwj9`.
 
@@ -59,7 +59,7 @@ The contain 'gitlab/gitlab-ce:latest' named web, so you run `docker ps -f name=w
 ```bash
 docker ps -f name=web -q
 ```
-![image](https://user-images.githubusercontent.com/75282285/198845581-cc271c65-d4c9-4fcd-863e-17b216999123.png)
+![container-registry](images/198845581-cc271c65-d4c9-4fcd-863e-17b216999123.png)
 
 Since the initial Gitlab server **certificate** is missing some info and cannot be used by Gitlab runner, we may have to **regenerate** a new one and **reconfigure** in the Gitlab server. Run below commands:
 ```bash
@@ -70,7 +70,7 @@ cd /etc/gitlab/ssl
 openssl genrsa -out ca.key 2048
 openssl req -new -x509 -days 365 -key ca.key -subj "/C=CN/ST=GD/L=SZ/O=Acme, Inc./CN=Acme Root CA" -out ca.crt
 ```
-![image](https://user-images.githubusercontent.com/75282285/198835693-4c8a130c-839c-4f09-8d09-274583d016ca.png)
+![container-registry](images/75282285/198835693-4c8a130c-839c-4f09-8d09-274583d016ca.png)
 
 Note: Make sure to replace below `YOUR_GITLAB_DOMAIN` with your own domain name. For example, chance20221020.com.
 ```bash
@@ -83,7 +83,7 @@ openssl req -newkey rsa:2048 -nodes -keyout registry.gitlab.$YOUR_GITLAB_DOMAIN.
 openssl x509 -req -extfile <(printf "subjectAltName=DNS:$YOUR_GITLAB_DOMAIN,DNS:gitlab.$YOUR_GITLAB_DOMAIN,DNS:registry.gitlab.$YOUR_GITLAB_DOMAIN") -days 365 -in registry.gitlab.$YOUR_GITLAB_DOMAIN.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out registry.gitlab.$YOUR_GITLAB_DOMAIN.crt
 exit
 ```
-![image](https://user-images.githubusercontent.com/75282285/198835798-11a157b4-78ad-4008-9c9a-6c32fbe4b526.png)
+![container-registry](images/198835798-11a157b4-78ad-4008-9c9a-6c32fbe4b526.png)
 
 
 ## 5. Enable **container register** 
@@ -121,11 +121,11 @@ gitlab-ctl reconfigure
 gitlab-ctl restart
 exit
 ```
-![image](https://user-images.githubusercontent.com/75282285/198836412-a6ef70bf-03e3-452e-bd66-06285acb1bc8.png)
+![container-registry](images/198836412-a6ef70bf-03e3-452e-bd66-06285acb1bc8.png)
 Run `gitlab-ctl reconfigure` command.
-![image](https://user-images.githubusercontent.com/75282285/198836714-09d2b79b-07ad-49be-88b8-db7740462edb.png)
+![container-registry](images/198836714-09d2b79b-07ad-49be-88b8-db7740462edb.png)
 Run `gitlab-ctl restart` command.
-![image](https://user-images.githubusercontent.com/75282285/198836779-eaf7351f-d96f-45fc-a744-59e6130c416c.png)
+![container-registry](images/198836779-eaf7351f-d96f-45fc-a744-59e6130c416c.png)
 
 ## 6. Update certificates for docker client
 In order to make **docker login** work, you need to add the **certificate** in docker certs folder.    
@@ -136,7 +136,7 @@ sudo mkdir -p /etc/docker/certs.d/registry.gitlab.$YOUR_GITLAB_DOMAIN:5005
 sudo docker cp $(docker ps -f name=web -q):/etc/gitlab/ssl/registry.gitlab.$YOUR_GITLAB_DOMAIN.crt /etc/docker/certs.d/registry.gitlab.$YOUR_GITLAB_DOMAIN:5005/
 sudo ls /etc/docker/certs.d/registry.gitlab.$YOUR_GITLAB_DOMAIN:5005
 ```
-![image](https://user-images.githubusercontent.com/75282285/198836974-3695efc8-38dc-43f5-8c8b-7d17c61fde51.png)
+![container-registry](images/75282285/198836974-3695efc8-38dc-43f5-8c8b-7d17c61fde51.png)
 
 Test docker login and you should be able to login now.     
 ```bash
@@ -144,20 +144,20 @@ docker login registry.gitlab.$YOUR_GITLAB_DOMAIN:5005
 Username: root
 Password: changeme
 ```
-![image](https://user-images.githubusercontent.com/75282285/198837064-43607368-4b8f-4bfe-bdc5-ed18fda89655.png)
+![container-registry](images/198837064-43607368-4b8f-4bfe-bdc5-ed18fda89655.png)
 
 You can also test if the docker image push works once login successfully.     
-Login to your Gitlab server web UI and go to the project you created, and then go to "Packages and registries" -> "Container Registry", you should be able to see the valid registry URL you suppose to use in order to build and push your image. For example, `docker build -t registry.gitlab.chance20221020.com:5005/gitlab-instance-80b162cc/cicd .` (cicd is your project name which was defined before) (See below screenshot)     
-![image](https://user-images.githubusercontent.com/75282285/198839056-7379ff32-1832-4153-b601-510dc71c0f63.png)
+Login to your Gitlab server web UI and go to the project you created, and then go to "Packages and registries" -> "Container Registry", you should be able to see the valid registry URL you suppose to use in order to build and push your image. For example, `docker build -t registry.gitlab.chance20221020.com:5005/gitlab-instance-80b162cc/cicd .` (cicd is your project name which was defined before) (See below screenshot)    
+![container-registry](images/198839056-7379ff32-1832-4153-b601-510dc71c0f63.png)
 
 Run `docker build -t registry.gitlab.chance20221020.com:5005/gitlab-instance-80b162cc/cicd .`:  
-![image](https://user-images.githubusercontent.com/75282285/198845941-737371c0-c4b4-4be6-b077-d8c994252262.png)
+![container-registry](images/198845941-737371c0-c4b4-4be6-b077-d8c994252262.png)
 
 Run `docker push registry.gitlab.chance20221020.com:5005/gitlab-instance-80b162cc/cicd`  :
-![image](https://user-images.githubusercontent.com/75282285/198845999-0005c561-519f-47b6-bb8c-b8728190d040.png)
+![container-registry](images/198845999-0005c561-519f-47b6-bb8c-b8728190d040.png)
 
 Login to your Gitlab server web UI and go to the project you created, and then go to "Packages and registries" -> "Container Registry", you should be able to see the valid registry.    
-![image](https://user-images.githubusercontent.com/75282285/198846348-796ec854-5853-43cf-a47b-4c6bb8b946d1.png)
+![container-registry](images/198846348-796ec854-5853-43cf-a47b-4c6bb8b946d1.png)
 
 ## 7. Configure **gitlab-runner** 
 Login to gitlab-runner and run commands below:
@@ -174,7 +174,7 @@ cat > /usr/local/share/ca-certificates/registry.gitlab-server.crt <<EOF
 # <Paste above gitlab registry certificate here>
 EOF
 ```
-![image](https://user-images.githubusercontent.com/75282285/198841098-c24e4189-12ea-4f95-9431-8b874d5f5bc5.png)
+![container-registry](images/198841098-c24e4189-12ea-4f95-9431-8b874d5f5bc5.png)
 
 ```bash
 update-ca-certificates
@@ -184,7 +184,7 @@ gitlab-runner register
 Enter the registration token:
 <Paste the token retrieved in Step 3>
 ```
-![image](https://user-images.githubusercontent.com/75282285/198841314-12153e70-48d2-4bef-bba0-89ab115aaa64.png)
+![container-registry](images/198841314-12153e70-48d2-4bef-bba0-89ab115aaa64.png)
 
 ```bash
 Enter a description for the runner:
@@ -200,7 +200,7 @@ Registering runner... succeeded                     runner=GR1348941Pjv5Qzaz
 Enter an executor: ssh, docker+machine, docker-ssh, docker, parallels, shell, virtualbox, docker-ssh+machine, kubernetes, custom:
 shell
 ```
-![image](https://user-images.githubusercontent.com/75282285/198860571-de08b17f-3dbd-4cb4-bd9d-56bd7f7069d8.png)
+![container-registry](images/198860571-de08b17f-3dbd-4cb4-bd9d-56bd7f7069d8.png)
 
 If success, you will see below message:
 ```
@@ -208,15 +208,16 @@ Runner registered successfully. Feel free to start it, but if it's running alrea
 Configuration (with the authentication token) was saved in "/etc/gitlab-runner/config.toml" 
 ```
 Once you finish above step, you should be able to see an available running in the project's CICD Runners section (see below screenshoot).
-![image](https://user-images.githubusercontent.com/75282285/198841474-c307e709-9b87-4d60-b97c-b86fda9599ff.png)
+![container-registry](images/198841474-c307e709-9b87-4d60-b97c-b86fda9599ff.png)
 ```bash
 root@bad518d25b44:/usr/local/share/ca-certificates# cat /etc/gitlab-runner/config.toml 
 ```
-![image](https://user-images.githubusercontent.com/75282285/198841985-308fe721-4f34-4046-ac99-2a8f03108307.png)
+![container-registry](images/198841985-308fe721-4f34-4046-ac99-2a8f03108307.png)
 
 You must change the `docker.sock` permission by `chmode 777 docker.sock` command in /var/run/ folder.     
-![image](https://user-images.githubusercontent.com/75282285/198860967-3cf2b7bd-fee6-45e1-97ca-1a1db590e4e2.png)   
-If you don't change the 777 permission, you will meet ''  errro during the pipeline.        
+![container-registry](images/198860967-3cf2b7bd-fee6-45e1-97ca-1a1db590e4e2.png)
+If you don't change the 777 permission, you will meet ''  errro during the pipeline.      
+![container-registry](images/198860990-ec3f5e0c-5d3a-468e-a717-d042061863d7.jpg)
 ![8084a6036da13811d73cf14efc12d4f](https://user-images.githubusercontent.com/75282285/198860990-ec3f5e0c-5d3a-468e-a717-d042061863d7.jpg)
 
 ## 8. Copy necessary files into Gitlab project repo.
@@ -224,7 +225,7 @@ If you don't change the 777 permission, you will meet ''  errro during the pipel
 ```bash
 git clone <URL from your gitlab server repo>
 ```
-![image](https://user-images.githubusercontent.com/75282285/198847608-c5a7c872-fd8f-4536-a61b-6f82dc0fbce1.png)
+![container-registry](images/198847608-c5a7c872-fd8f-4536-a61b-6f82dc0fbce1.png)
 
 You need to at your project name folder (/home/devopsdaydayup/cicd) in the local host (192.168.50.164). 
 Then you copy the files from '003-GitlabCICD' folder to you current folder. 
@@ -232,15 +233,15 @@ Then you copy the files from '003-GitlabCICD' folder to you current folder.
 cd <your project name folder>
 cp /path/to/devopsdaydayup/003-GitlabCICD/.  <your gitlab repo>
 ```
-![image](https://user-images.githubusercontent.com/75282285/198859953-d95ff7c1-cab8-43f7-9d79-f674f19608c3.png)
+![container-registry](images/198859953-d95ff7c1-cab8-43f7-9d79-f674f19608c3.png)
 
 ```bash
 git add .
 git commit -am "First"
 git push
 ```
-![image](https://user-images.githubusercontent.com/75282285/198859993-dc2cbe76-551c-4ee1-9aee-97a4379ee2f0.png)
-![image](https://user-images.githubusercontent.com/75282285/198859999-f79418ff-764e-4c78-9e07-a969a64b9776.png)
+![container-registry](images/198859993-dc2cbe76-551c-4ee1-9aee-97a4379ee2f0.png)
+![container-registry](images/198859999-f79418ff-764e-4c78-9e07-a969a64b9776.png)
 
 
 Once you push the code, you should be able to see the pipeline is automatically triggered under the project -> "CI/CD" -> "Jobs"
