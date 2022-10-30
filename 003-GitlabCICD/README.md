@@ -142,8 +142,7 @@ sudo mkdir -p /etc/docker/certs.d/registry.gitlab.$YOUR_GITLAB_DOMAIN:5005
 sudo docker cp $(docker ps -f name=web -q):/etc/gitlab/ssl/registry.gitlab.$YOUR_GITLAB_DOMAIN.crt /etc/docker/certs.d/registry.gitlab.$YOUR_GITLAB_DOMAIN:5005/
 sudo ls /etc/docker/certs.d/registry.gitlab.$YOUR_GITLAB_DOMAIN:5005
 ```
-![container-registry](images/75282285/198836974-3695efc8-38dc-43f5-8c8b-7d17c61fde51.png)
-![image](https://user-images.githubusercontent.com/75282285/198836974-3695efc8-38dc-43f5-8c8b-7d17c61fde51.png)
+![container-registry](images/198836974-3695efc8-38dc-43f5-8c8b-7d17c61fde51.png)
 
 Test docker login and you should be able to login now.     
 ```bash
