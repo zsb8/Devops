@@ -23,6 +23,7 @@ git clone https://github.com/zsb8/Devops.git
 cd devopsdaydayup/003-GitlabCICD
 docker-compose up -d
 ```
+![container-registry](images/198853775-33b6826a-c406-42b9-a309-81d03dbc754a.png)
 ![image](https://user-images.githubusercontent.com/75282285/198853775-33b6826a-c406-42b9-a309-81d03dbc754a.png)
 
 ## 2. Add below entry in your **hosts** file (i.g. `/etc/hosts`). 
