@@ -70,8 +70,7 @@ cd /etc/gitlab/ssl
 openssl genrsa -out ca.key 2048
 openssl req -new -x509 -days 365 -key ca.key -subj "/C=CN/ST=GD/L=SZ/O=Acme, Inc./CN=Acme Root CA" -out ca.crt
 ```
-![container-registry](images/75282285/198835693-4c8a130c-839c-4f09-8d09-274583d016ca.png)
-![image](https://user-images.githubusercontent.com/75282285/198835693-4c8a130c-839c-4f09-8d09-274583d016ca.png)
+![container-registry](images/198835693-4c8a130c-839c-4f09-8d09-274583d016ca.png)
 
 Note: Make sure to replace below `YOUR_GITLAB_DOMAIN` with your own domain name. For example, chance20221020.com.
 ```bash
@@ -243,9 +242,6 @@ git commit -am "First"
 git push
 ```
 ![container-registry](images/198859993-dc2cbe76-551c-4ee1-9aee-97a4379ee2f0.png)
-![container-registry](images/198859999-f79418ff-764e-4c78-9e07-a969a64b9776.png)
-
-
 Once you push the code, you should be able to see the pipeline is automatically triggered under the project -> "CI/CD" -> "Jobs"
 ![gitlab-ci-pipeline](images/gitlab-ci-pipeline.png)
 
