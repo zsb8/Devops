@@ -222,10 +222,8 @@ root@bad518d25b44:/usr/local/share/ca-certificates# cat /etc/gitlab-runner/confi
 
 You must change the `docker.sock` permission by `chmod 777 /var/run/docker.sock` command in runner container.    
 ![container-registry](images/198892458-e800226c-5a5d-485b-8f2d-883c1f73bbf4.png)
-![image](https://user-images.githubusercontent.com/75282285/198892458-e800226c-5a5d-485b-8f2d-883c1f73bbf4.png)
 If you don't change the 777 permission, you will meet ''  errro during the pipeline.      
 ![container-registry](images/198860990-ec3f5e0c-5d3a-468e-a717-d042061863d7.jpg)
-![8084a6036da13811d73cf14efc12d4f](https://user-images.githubusercontent.com/75282285/198860990-ec3f5e0c-5d3a-468e-a717-d042061863d7.jpg)
 
 ## 8. Copy necessary files into Gitlab project repo.
 **git clone** from your Gitlab project repo to your local host and copy necessary files from our devopsdaydayup lab repo (in the same folder as this README.md)
