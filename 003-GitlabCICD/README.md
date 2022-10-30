@@ -224,7 +224,7 @@ You need to at your project name folder (/home/devopsdaydayup/cicd) in the local
 Then you copy the files from '003-GitlabCICD' folder to you current folder. 
 ```bash 
 cd <your project name folder>
-cp /path/to/devopsdaydayup/003-GitlabCICD/{app.py,Dockerfile,requirements.txt}  <your gitlab repo>
+cp /path/to/devopsdaydayup/003-GitlabCICD/.  <your gitlab repo>
 ```
 ![image](https://user-images.githubusercontent.com/75282285/198848080-690b4f08-5df4-4bbc-b085-28b56f0fe194.png)
 
