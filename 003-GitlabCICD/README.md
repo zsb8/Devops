@@ -313,7 +313,7 @@ Check if any gitlab runner is online. If so, most likely the job is stuck becaus
 
 **Solution:**
 You need to enable your runner without tags. Go to your project and go to "Settings" -> "CI/CD" -> Click the online gitlab runner -> Check "Indicates whether this runner can pick jobs without tags". Then your pipeline should be able to pick this runner.
-![image](https://user-images.githubusercontent.com/75282285/198848333-73bf8f68-8516-490f-82fe-07f52f67d21d.png)
+![image](https://user-images.githubusercontent.com/75282285/198860650-ab2f6fd4-6cdb-422a-94b1-1e23650dd845.png)
 
 > Refer to: https://stackoverflow.com/questions/53370840/this-job-is-stuck-because-the-project-doesnt-have-any-runners-online-assigned
 
