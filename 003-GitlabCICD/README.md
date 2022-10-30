@@ -226,7 +226,7 @@ Then you copy the files from '003-GitlabCICD' folder to you current folder.
 cd <your project name folder>
 cp /path/to/devopsdaydayup/003-GitlabCICD/.  <your gitlab repo>
 ```
-![image](https://user-images.githubusercontent.com/75282285/198848080-690b4f08-5df4-4bbc-b085-28b56f0fe194.png)
+![image](https://user-images.githubusercontent.com/75282285/198859953-d95ff7c1-cab8-43f7-9d79-f674f19608c3.png)
 
 ```bash
 git add .
