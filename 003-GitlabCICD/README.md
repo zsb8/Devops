@@ -25,12 +25,10 @@ docker-compose up -d
 ```
 ![container-registry](images/198853775-33b6826a-c406-42b9-a309-81d03dbc754a.png)
 
-Test the simple web.
+Test the simple web.      
 ![container-registry](images/198884547-02c087a3-58ee-4708-a18d-8e0f4b915a31.png)
-![image](https://user-images.githubusercontent.com/75282285/198884547-02c087a3-58ee-4708-a18d-8e0f4b915a31.png)
-You can visit http://192.168.50.164:8080
+You can visit http://192.168.50.164:8080     
 ![container-registry](images/198884576-b405f95a-95b7-4f73-8497-7176d8366b13.png)
-![image](https://user-images.githubusercontent.com/75282285/198884576-b405f95a-95b7-4f73-8497-7176d8366b13.png)
 
 
 ## 2. Add below entry in your **hosts** file (i.g. `/etc/hosts`). 
