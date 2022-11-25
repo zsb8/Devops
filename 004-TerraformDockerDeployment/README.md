@@ -114,22 +114,22 @@ Before running `terraform init`, you have to update `config/test/config.tfbacken
 ```
 terraform init -backend-config=config/test/config.tfbackend
 ```
-![image](https://user-images.githubusercontent.com/75282285/204052076-b4182cef-79e3-44fc-a740-6aff10f8aace.png)
+![image](https://user-images.githubusercontent.com/75282285/204052076-b4182cef-79e3-44fc-a740-6aff10f8aace.png)     
 
 **Plan**
 ```
 terraform plan -var-file=config/test/test.tfvars -out deploy.tfplan
 ```
-![image](https://user-images.githubusercontent.com/75282285/204052163-dd71ec91-4110-456e-ad88-2de788c36e66.png)
+![image](https://user-images.githubusercontent.com/75282285/204052163-dd71ec91-4110-456e-ad88-2de788c36e66.png)   
 
 **Apply**
 ```
 terraform apply deploy.tfplan
 ```
-![image](https://user-images.githubusercontent.com/75282285/204052392-faf44482-e813-4afb-b58b-43a12eaa080d.png)
+![image](https://user-images.githubusercontent.com/75282285/204052392-faf44482-e813-4afb-b58b-43a12eaa080d.png)  
 You can find it created a miro web server with Docker container. The port is 8080.
-![image](https://user-images.githubusercontent.com/75282285/204052484-00046151-2153-423d-861b-69262765fb68.png)
-
+![image](https://user-images.githubusercontent.com/75282285/204052484-00046151-2153-423d-861b-69262765fb68.png)    
+ 
 ## 8. Verification
 You should be able to visit the website via `http://0.0.0.0:8080`
 ![hello-world](images/hello-world.png)
