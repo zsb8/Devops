@@ -34,7 +34,8 @@ EqTvlWRmvIEBNm9W5Jx15aU7hyGJTGh2YZg/TuNZiqc=
 
 ## 2. Add the new DNS record in your local hosts file
 In your `docker-compose.yaml`, you have defined your gitlab server hostname in `hostname` field. 
-![image](https://user-images.githubusercontent.com/75282285/204041174-ed61297d-a8f6-4c50-824c-d14ecd762403.png)
+![image](https://user-images.githubusercontent.com/75282285/204041397-f2340f6d-81e7-4eee-8be9-127266447517.png)
+
 
 Add it to your local hosts (Ubuntu)  file so that you can use it to git clone the repo from your gitlab server.
 
@@ -44,7 +45,7 @@ echo "${Your_Local_Host_IP}  gitlab.<Your_Gitlab_Hostname>" |sudo tee -a /etc/ho
 i.g.
 echo "${Your_Local_Host_IP}  gitlab.example20221106.com" |sudo tee -a /etc/hosts
 ```
-
+![image](https://user-images.githubusercontent.com/75282285/204041174-ed61297d-a8f6-4c50-824c-d14ecd762403.png)
 
 Then you should be able to access the Gitlab website via `https://gitlab.example20221106.com` in your Ubuntu.
 ![image](https://user-images.githubusercontent.com/75282285/204041227-e30ccb92-3f12-4031-b567-ae945d27129f.png)
