@@ -93,6 +93,10 @@ Make a note of the new token generated as you will need to apply it in the next 
 
 ![gitlab-personal-accees-token](images/gitlab-personal-accees-token.png)
 
+glpat-oxHyVMVcoVEfGmqvzPQu
+![image](https://user-images.githubusercontent.com/75282285/204049288-e24b54d7-8b37-488e-b484-579b002b078a.png)
+
+
 ## 6. Update `config.tfbackend`
 Before running `terraform init`, you have to update `config/test/config.tfbackend` file with the credential/gitlab server info accordingly. The below is the definition for the variables:</br>
 
