@@ -38,8 +38,10 @@ In your `docker-compose.yaml`, you have defined your gitlab server hostname in `
 export Your_Local_Host_IP=<Your_Local_Host_IP>
 echo "${Your_Local_Host_IP}  gitlab.<Your_Gitlab_Hostname>" |sudo tee -a /etc/hosts
 i.g.
-echo "${Your_Local_Host_IP}  gitlab.example20221106.com" |sudo tee -a /etc/hosts
+echo "${Your_Local_Host_IP}  gitlab.zsb.com" |sudo tee -a /etc/hosts
 ```
+![image](https://user-images.githubusercontent.com/75282285/204039603-e386a0b6-e9e5-4366-99b7-fb61f255b8a0.png)
+
 Then you should be able to access the Gitlab website via `https://<Your_Gitlab_Hostname>`
 
 ## 3. Update the Gitlab original Certificate
