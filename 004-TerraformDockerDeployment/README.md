@@ -2,6 +2,7 @@
 
 # Project Goal
 In this article, you will learn the terraform basic usage and use terraform script to create a docker container.
+Gitlab will store the statu file of Terraform.
 
 # Table of Contents
 1. [Prerequisites](#prerequisites)
