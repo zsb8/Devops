@@ -33,17 +33,20 @@ sudo docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 EqTvlWRmvIEBNm9W5Jx15aU7hyGJTGh2YZg/TuNZiqc=
 
 ## 2. Add the new DNS record in your local hosts file
-In your `docker-compose.yaml`, you have defined your gitlab server hostname in `hostname` field. Add it to your local hosts (Ubuntu)  file so that you can use it to git clone the repo from your gitlab server.
+In your `docker-compose.yaml`, you have defined your gitlab server hostname in `hostname` field. 
+![image](https://user-images.githubusercontent.com/75282285/204040859-5cc3cf2b-a264-4f5b-8583-23dd5e223378.png)
+
+Add it to your local hosts (Ubuntu)  file so that you can use it to git clone the repo from your gitlab server.
 
 ```bash
 export Your_Local_Host_IP=<Your_Local_Host_IP>
 echo "${Your_Local_Host_IP}  gitlab.<Your_Gitlab_Hostname>" |sudo tee -a /etc/hosts
 i.g.
-echo "${Your_Local_Host_IP}  gitlab.zsb.com" |sudo tee -a /etc/hosts
+echo "${Your_Local_Host_IP}  gitlab.example20221106.com" |sudo tee -a /etc/hosts
 ```
 ![image](https://user-images.githubusercontent.com/75282285/204039603-e386a0b6-e9e5-4366-99b7-fb61f255b8a0.png)
 
-Then you should be able to access the Gitlab website via `https://gitlab.zsb.com` in your Ubuntu.
+Then you should be able to access the Gitlab website via `https://gitlab.example20221106.com` in your Ubuntu.
 ![image](https://user-images.githubusercontent.com/75282285/204040004-00b41adb-acbc-4f19-952e-ab59cdbdd152.png)
 In the web page, you input the username (root) and password ( EqTvlWRmvIEBNm9W5Jx15aU7hyGJTGh2YZg/TuNZiqc= ), then you can login the gitlab whiched buit in you Ubuntu.
 ## 3. Update the Gitlab original Certificate
