@@ -126,6 +126,7 @@ terraform plan -var-file=config/test/test.tfvars -out deploy.tfplan
 ```
 terraform apply deploy.tfplan
 ```
+![image](https://user-images.githubusercontent.com/75282285/204052392-faf44482-e813-4afb-b58b-43a12eaa080d.png)
 
 ## 8. Verification
 You should be able to visit the website via `http://0.0.0.0:8080`
