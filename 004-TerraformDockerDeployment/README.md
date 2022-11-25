@@ -44,7 +44,7 @@ echo "${Your_Local_Host_IP}  gitlab.<Your_Gitlab_Hostname>" |sudo tee -a /etc/ho
 i.g.
 echo "${Your_Local_Host_IP}  gitlab.example20221106.com" |sudo tee -a /etc/hosts
 ```
-![image](https://user-images.githubusercontent.com/75282285/204039603-e386a0b6-e9e5-4366-99b7-fb61f255b8a0.png)
+
 
 Then you should be able to access the Gitlab website via `https://gitlab.example20221106.com` in your Ubuntu.
 ![image](https://user-images.githubusercontent.com/75282285/204041227-e30ccb92-3f12-4031-b567-ae945d27129f.png)
