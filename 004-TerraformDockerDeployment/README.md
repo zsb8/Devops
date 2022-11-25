@@ -85,6 +85,7 @@ sudo update-ca-certificates
 ## 5. Create a new project in your Gitlab server and generate a personal access token
 Login to your Gitlab server website (`https://<Your_Gitlab_Hostname>`) in Ubuntu or access `https://192.168.50.164`.      
 Click **"New project"** -> **"Create blank project"** -> Type a project name in **"Project name"**, i.g. *first_project*  , select **"Public"** in **Visiblity Level** section -> Click **"Create project"** </br>
+![image](https://user-images.githubusercontent.com/75282285/204043805-4c8e0bf6-29d7-4408-83b1-ab4e3dc81816.png)
 
 Once the project is create, go to the new project -> **"Setting""** -> **"Access Tokens"** -> Type a customized token name in **Token name** field, i.ig  *terraform-token* , Select a role **"Maintainer"** in *Select a role field*, Select scopes **"api/read_api/read_repositry/write_repository"** </br>
 
