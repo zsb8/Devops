@@ -44,7 +44,7 @@ echo "${Your_Local_Host_IP}  gitlab.zsb.com" |sudo tee -a /etc/hosts
 
 Then you should be able to access the Gitlab website via `https://gitlab.zsb.com` in your Ubuntu.
 ![image](https://user-images.githubusercontent.com/75282285/204040004-00b41adb-acbc-4f19-952e-ab59cdbdd152.png)
-
+In the web page, you input the username (root) and password ( EqTvlWRmvIEBNm9W5Jx15aU7hyGJTGh2YZg/TuNZiqc= ), then you can login the gitlab whiched buit in you Ubuntu.
 ## 3. Update the Gitlab original Certificate
 Since the initial Gitlab server **certificate** is missing some info, you may have to **regenerate** a new one and **reconfigure** in the gitlab server. Run below commands:
 ```bash
