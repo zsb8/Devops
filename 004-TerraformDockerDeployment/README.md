@@ -15,6 +15,7 @@ In this article, you will learn the terraform basic usage and use terraform scri
 - Docker (see installation guide [here](https://docs.docker.com/get-docker/))
 - Docker Compose (see installation guide [here](https://docs.docker.com/compose/install/))
 - Terraform (see installation guide [here](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli))
+- Gitlab (Not really Gitlib. It is built in you VM Ubuntu for easily to test).
 
 # <a name="project_steps">Project Steps</a>
 
