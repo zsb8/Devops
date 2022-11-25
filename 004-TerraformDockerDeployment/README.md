@@ -98,7 +98,17 @@ glpat-oxHyVMVcoVEfGmqvzPQu
 
 
 ## 6. Update `config.tfbackend`
-Before running `terraform init`, you have to update `config/test/config.tfbackend` file (# Project Name: Deploy Docker with Terraform Script
+Before running `terraform init`, you have to update `config/test/config.tfbackend` file (/home/zsb/devopsdaydayup/004-TerraformOracleCloudVM/config/test
+) with the credential/gitlab server info accordingly. The below is the definition for the variables:</br>
+
+**PROJECT_ID:** Go to the project and head to **"Setting"** -> **"General"**, and you will see **"Project ID"** in the page. </br>
+**TF_USERNAME:** If you haven't created your own user, the default user should be `root` </br>
+**TF_PASSWORD:** This is the gitlab **personal access token**, which you can fetch from previous step </br>
+**TF_ADDRESS:** This is URL to store your **terraform state file**. The pattern is like `https://<your gitlab server url>/api/v4/projects/<your project id>/terraform/state/old-state-name`. For example: 
+`https://gitlab.com/api/v4/projects/34/terraform/state/old-state-name`
+
+![image](https://user-images.githubusercontent.com/75282285/204049779-23b560dc-046e-4be6-86be-47bde06e3899.png)
+
 
 # Project Goal
 In this article, you will learn the terraform basic usage and use terraform script to create a docker container.
