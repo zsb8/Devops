@@ -127,6 +127,7 @@ terraform plan -var-file=config/test/test.tfvars -out deploy.tfplan
 terraform apply deploy.tfplan
 ```
 ![image](https://user-images.githubusercontent.com/75282285/204052392-faf44482-e813-4afb-b58b-43a12eaa080d.png)
+You can find it created a miro web server with Docker container. The port is 8080.
 ![image](https://user-images.githubusercontent.com/75282285/204052484-00046151-2153-423d-861b-69262765fb68.png)
 
 ## 8. Verification
