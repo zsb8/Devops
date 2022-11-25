@@ -105,7 +105,7 @@ Before running `terraform init`, you have to update `config/test/config.tfbacken
 **TF_USERNAME:** If you haven't created your own user, the default user should be `root` </br>
 **TF_PASSWORD:** This is the gitlab **personal access token**, which you can fetch from previous step </br>
 **TF_ADDRESS:** This is URL to store your **terraform state file**. The pattern is like `https://<your gitlab server url>/api/v4/projects/<your project id>/terraform/state/old-state-name`. For example: 
-`https://gitlab.com/api/v4/projects/34/terraform/state/old-state-name`
+`[https://gitlab.com/api/v4/projects/34/terraform/state/old-state-name](https://gitlab.example20221106.com/api/v4/projects/34/terraform/state/old-state-name)`
 
 ![image](https://user-images.githubusercontent.com/75282285/204049779-23b560dc-046e-4be6-86be-47bde06e3899.png)
 
