@@ -106,6 +106,9 @@ Before running `terraform init`, you have to update `config/test/config.tfbacken
 **TF_ADDRESS:** This is URL to store your **terraform state file**. The pattern is like `https://<your gitlab server url>/api/v4/projects/<your project id>/terraform/state/old-state-name`. For example: 
 `https://gitlab.com/api/v4/projects/34/terraform/state/old-state-name`
 
+![image](https://user-images.githubusercontent.com/75282285/204049517-fe8b6fc6-4ae4-4ee9-98b4-ad430090e851.png)
+
+
 ## 7. Run terraform script to deploy the infra
 **Init**
 ```
