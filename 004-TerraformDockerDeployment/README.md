@@ -23,12 +23,13 @@ In this article, you will learn the terraform basic usage and use terraform scri
 git clone https://github.com/chance2021/devopsdaydayup.git
 cd devopsdaydayup/004-TerraformDockerDeployment
 docker-compose up -d
-
 ```
 > Note: Once the gitlab container is fully up running, you can run below command to retrieve the initial password, if you haven't specified it in the deployment file. The default admin username should be `root`
 ```
 sudo docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 ```
+![image](https://user-images.githubusercontent.com/75282285/204031919-6481dbd0-9066-4e42-82d9-c13b7481b364.png)
+
 
 ## 2. Add the new DNS record in your local hosts file
 In your `docker-compose.yaml`, you have defined your gitlab server hostname in `hostname` field. Add it to your local hosts file so that you can use it to git clone the repo from your gitlab server.
