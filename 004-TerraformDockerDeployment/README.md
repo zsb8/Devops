@@ -29,7 +29,7 @@ docker-compose up -d
 sudo docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 ```
 ![image](https://user-images.githubusercontent.com/75282285/204031919-6481dbd0-9066-4e42-82d9-c13b7481b364.png)
-
+EqTvlWRmvIEBNm9W5Jx15aU7hyGJTGh2YZg/TuNZiqc=
 
 ## 2. Add the new DNS record in your local hosts file
 In your `docker-compose.yaml`, you have defined your gitlab server hostname in `hostname` field. Add it to your local hosts file so that you can use it to git clone the repo from your gitlab server.
