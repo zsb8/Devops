@@ -133,6 +133,7 @@ You can find it created a miro web server with Docker container. The port is 808
 ## 8. Verification
 You should be able to visit the website via `http://0.0.0.0:8080`
 ![hello-world](images/hello-world.png)
+![image](https://user-images.githubusercontent.com/75282285/204060673-1dbe1ec7-5406-46d9-bfef-e936dd5d585b.png)
 
 
 # <a name="post_project">Post Project</a>
