@@ -1,7 +1,7 @@
 # Project Name: Deploy Docker with Terraform Script
 
 # Project Goal
-In this article, you will learn the terraform basic usage and use terraform script to create a docker container.
+I did the terraform basic usage and used terraform script to create a docker container.
 Gitlab will store the statu file of Terraform.
 
 # Table of Contents
