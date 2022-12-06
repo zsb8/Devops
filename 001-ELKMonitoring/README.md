@@ -1,5 +1,5 @@
 # Project Name: ELK Monitoring
-This instruction shows how I setup a ELK (Elasticsearch/Logstash/Kibana) stack to monitor a server.
+This project showded me how to setup a ELK (Elasticsearch/Logstash/Kibana) stack to monitor a server.
 
 # Project Goal
 Deploy a ELK with docker-compose, as well as configuring metricbeat service to collect the system metric from a server and present them in Kibana.
