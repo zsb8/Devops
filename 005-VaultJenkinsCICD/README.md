@@ -1,7 +1,7 @@
 # Project Name: Vault Jenkins Pipeline 
 
 # Project Goal
-In this article, you will learn how to integrate Vault into Jenkins pipeline, as well as the basic usage of Hashicorp Vault.
+Integrate Vault into Jenkins pipeline, as well as the basic usage of Hashicorp Vault.
 
 # Table of Contents
 1. [Prerequisites](#prerequisites)
