@@ -1,4 +1,4 @@
-version: '2'
+version: '3.6'
 services:
   jenkins:
     build:
@@ -30,10 +30,10 @@ services:
     volumes:
       - type: volume
         source: vault_file
-        target: /vault/file
+        target: '/vault/file'
       - type: volume
         source: vault_config
-        target: /vault/config
+        target: '/vault/config'
 
 
 volumes:
