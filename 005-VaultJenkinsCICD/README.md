@@ -230,6 +230,10 @@ h. Run it.
 i. Check the log.
 ![image](https://user-images.githubusercontent.com/75282285/206535969-241e9f66-95f8-4e2f-b878-3906290efe6d.png)
 
+![image](https://user-images.githubusercontent.com/75282285/206541670-ef2307c7-9766-4b64-9f8c-9201f130e4cd.png)
+
+
+
 j. Check the new file in Jenkins contain. 
 ![image](https://user-images.githubusercontent.com/75282285/206535861-690685a9-61f5-4ceb-940b-3af7c0f77453.png)
 You will find these new files and the contents.
