@@ -228,8 +228,8 @@ h. Unselect **"Lightweight checkout"**</br>
 h. Run it.
 ![image](https://user-images.githubusercontent.com/75282285/206534327-37c8a00d-21a5-49f0-904e-7c3ed0b72142.png)
 
-i. Jenkins will run the shell file.
-This is the contents of 'Jenkinsfile'.
+i. Jenkins will run the shell file.             
+This is the contents of 'Jenkinsfile'.             
 ![image](https://user-images.githubusercontent.com/75282285/206543080-86f5e4d4-c811-4f8f-b755-0b39ca74609c.png)
 
 
