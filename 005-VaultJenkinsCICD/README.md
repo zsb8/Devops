@@ -149,7 +149,7 @@ echo $ROLE_ID
 ```
 > **Note:** Please make a note as it will be needed when configuring Jenkins credential
 ![image](https://user-images.githubusercontent.com/75282285/206519276-e6c918aa-9536-45f9-94f6-670006a18c13.png)
-In this case, the role_id is c8329502-e4cf-4c7f-10fd-5d3dfabea474
+In this case, the role_id is c8329502-e4cf-4c7f-10fd-5d3dfabea474     
 d. Create a **secret id** via the previous role
 ```
 export SECRET_ID="$(vault write -f -field=secret_id auth/approle/role/first-role/secret-id)"
@@ -157,7 +157,7 @@ echo $SECRET_ID
 ```
 > **Note:** Please make a note as it will be needed when configuring Jenkins credential
 ![image](https://user-images.githubusercontent.com/75282285/206519473-8f40bdb4-1b8a-45ab-a215-d5861951980e.png)
-In this case, the Secret_id is: d4fc7b52-92a9-bc77-6f3c-a1661d7df1ef
+In this case, the Secret_id is: d4fc7b52-92a9-bc77-6f3c-a1661d7df1ef     
 
 
 e. Create a **token** with the role ID and secret ID
