@@ -94,10 +94,10 @@ policies             ["root"]
 > Refer to https://developer.hashicorp.com/vault/docs/secrets/kv/kv-v2
 ```
 vault secrets enable -version=2 kv-v2
-
 vault kv put -mount=kv-v2 devops-secret username=root password=changeme
-
 ```
+![image](https://user-images.githubusercontent.com/75282285/206518379-b2d9ba42-8e60-4922-9c22-62fcdeb7142d.png)
+
 You can **read** the data by running this:
 ```
 vault kv get -mount=kv-v2 devops-secret
