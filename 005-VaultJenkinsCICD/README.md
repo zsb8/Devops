@@ -228,8 +228,6 @@ h. Run it.
 ![image](https://user-images.githubusercontent.com/75282285/206534327-37c8a00d-21a5-49f0-904e-7c3ed0b72142.png)
 
 i. Check the log.
-![image](https://user-images.githubusercontent.com/75282285/206535969-241e9f66-95f8-4e2f-b878-3906290efe6d.png)
-
 ![image](https://user-images.githubusercontent.com/75282285/206541670-ef2307c7-9766-4b64-9f8c-9201f130e4cd.png)
 
 
@@ -237,7 +235,8 @@ i. Check the log.
 j. Check the new file in Jenkins contain. 
 ![image](https://user-images.githubusercontent.com/75282285/206535861-690685a9-61f5-4ceb-940b-3af7c0f77453.png)
 You will find these new files and the contents.
-![image](https://user-images.githubusercontent.com/75282285/206536645-edc8f15a-3bf2-4e98-bc59-ebf6de30dfa5.png)
+![image](https://user-images.githubusercontent.com/75282285/206542044-65fb5803-ed7b-432a-b731-b083e8845908.png)
+
 
 
 # <a name="post_project">Post Project</a>
