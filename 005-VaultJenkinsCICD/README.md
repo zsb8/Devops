@@ -40,8 +40,8 @@ Unseal Key 5: /knntQuDnzswhIK1XhpZh77ByheqWFOi69FehuxtIq3N
 Initial Root Token: hvs.mzUOQ9nFDC8F8U1nPLX0Kb6h
 ```
 
-b. **Unsealing** the vault </br>
-Type `vault operator unseal <unseal key>`. The unseal keys are from previous output. You will need at lease **3 keys** to unseal the vault. </br>
+b. **Unsealing** the vault</br>
+In the Vault container. Type `vault operator unseal <unseal key>`. The unseal keys are from previous output. You will need at lease **3 keys** to unseal the vault. </br>
 
 When the value of  `Sealed` changes to **false**, the Vault is unsealed. You should see below similar output once it is unsealed
 
@@ -66,6 +66,8 @@ Active Node Address     <none>
 Raft Committed Index    31
 Raft Applied Index      31
 ```
+![image](https://user-images.githubusercontent.com/75282285/206467158-7da61fdd-3fb2-4555-8317-0b2ad7f6185f.png)
+
 c. Sign in to vault with **root** user </br>
 Type `vault login` and enter the `Initial Root Token` retrieving from previous output
 ```
