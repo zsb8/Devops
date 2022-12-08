@@ -284,7 +284,7 @@ ref: https://github.com/hashicorp/vault/issues/6287#issuecomment-684125899
 ## Issue 3: version in plugins.txt
 ![WeChat Image_20221208090241](https://user-images.githubusercontent.com/75282285/206465712-5bfb442a-5d5d-4a8c-beb5-5f8da2c545e0.png)
 Solve: change the configuration-as-code's version in plugins.txt to 1569.vb_72405b_80249
-![image](https://user-images.githubusercontent.com/75282285/206551528-7970cb18-f470-4ed0-9490-7bfaa5167d63.png)
+![image](https://user-images.githubusercontent.com/75282285/206552537-dd7287e4-983f-4ef3-8442-10180de45949.png)
 
 
 # <a name="reference">Reference</a>
