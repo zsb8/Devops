@@ -235,3 +235,8 @@ ref: https://github.com/hashicorp/vault/issues/6287#issuecomment-684125899
 [Vault Getting Started Deploy](https://developer.hashicorp.com/vault/tutorials/getting-started/getting-started-deploy)</br>
 [Vault Store The Google API Key](https://developer.hashicorp.com/vault/tutorials/secrets-management/static-secrets#store-the-google-api-key)</br>
 [Vault Signed SSH Certificates](https://developer.hashicorp.com/vault/docs/secrets/ssh/signed-ssh-certificates)</br>
+
+
+## Issue 3: version in plugin.txt
+![WeChat Image_20221208090241](https://user-images.githubusercontent.com/75282285/206465712-5bfb442a-5d5d-4a8c-beb5-5f8da2c545e0.png)
+
