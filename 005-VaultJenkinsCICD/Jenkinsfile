@@ -18,11 +18,11 @@ node {
         sh 'echo $testing|tee testing.txt'
         sh 'export TESTING=$testing'
         sh 'cat testing.txt'
-        sh 'echo "hello zsb is a good man! \n world" > hello_world.txt'
+        sh 'echo "Hello, Zsb is a good man! \n world" > hello_world.txt'
         sh 'echo $testing >> hello_world.txt'
         sh 'cat hello_world.txt'
         sh 'echo $testing_again|tee testing_again.txt'
-	sh 'echo "Every people know: Zsb is a good man! \n world" > hello_world.txt'
+        sh 'echo "Every people know: Zsb is a very good man! \n world" > testing_again.txt'
         sh 'cat testing_again.txt'
     }
 }
