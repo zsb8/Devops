@@ -205,13 +205,21 @@ Login to your Jenkins website and go to **"Manage Jenkins"** -> **"Manage Creden
 **Description:** Github token</br>
 ![image](https://user-images.githubusercontent.com/75282285/206532665-9fd5f3dd-24ab-4f77-b152-98bff3ae543f.png)
 
+![image](https://user-images.githubusercontent.com/75282285/206532834-2a66134a-28d0-4f96-b3c0-afa6cbf6dc25.png)
+
+
+
 ## 6. Create a Jenkins Pipeline
 a. In the Jenkins portal, click **"New Item"** in the left navigation lane, and type the item name (i.g. first-project) and select **"Pipeline"**. Click **"OK"** to configure the pipeline.</br> 
+![image](https://user-images.githubusercontent.com/75282285/206533055-c6dd4abc-74bc-446b-bc5a-27bb128d565e.png)
+
 b. Go to **"Pipeline"** section and select **"Pipeline script from SCM"** in the **"Definition"** field</br>
 c. Select **"Git"** in **"SCM"** field</br>
 d. Add `https://github.com/chance2021/devopsdaydayup.git` in **"Repository URL"** field</br>
 e. Select your github credential in **"Credentials"**</br>
 f. Type `*/main` in **"Branch Specifier"** field</br>
+![image](https://user-images.githubusercontent.com/75282285/206533754-0776588e-9097-4e35-a592-56f056640af8.png)
+
 g. Type `005-VaultJenkinsCICD/Jenkinsfile` in **"Script Path"**</br>
 h. Unselect **"Lightweight checkout"**</br>
 
