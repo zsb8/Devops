@@ -13,8 +13,8 @@ services:
       # Please update JENKINS_PASSWORD and JENKINS_USERNAME in .env file
       - JENKINS_USER=root
       - TZ=America/Toronto
-      - JENKINS_ADMIN_ID=$JENKINS_USERNAME
-      - JENKINS_ADMIN_PASSWORD=$JENKINS_PASSWORD
+      - JENKINS_ADMIN_ID=admin
+      - JENKINS_ADMIN_PASSWORD=bitnami
     volumes:
       - 'jenkins_data:/var/jenkins_home'
       - '/usr/bin/docker:/usr/bin/docker'
