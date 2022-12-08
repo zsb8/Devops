@@ -126,12 +126,12 @@ vault policy write first-policy policy.hcl
 vault policy list
 vault policy read first-policy
 ```
-![image](https://user-images.githubusercontent.com/75282285/206518833-8b4fb861-acdf-4827-85d6-50d4c6039159.png)
 
 b. **Enable approle**
 ```
 vault auth enable approle
 ```
+![image](https://user-images.githubusercontent.com/75282285/206519049-4550f60e-8324-407d-8870-6f7c9de1d1bf.png)
 
 c. Create an **role**
 ```
