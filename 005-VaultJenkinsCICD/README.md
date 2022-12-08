@@ -148,6 +148,7 @@ export ROLE_ID="$(vault read -field=role_id auth/approle/role/first-role/role-id
 echo $ROLE_ID
 ```
 > **Note:** Please make a note as it will be needed when configuring Jenkins credential
+![image](https://user-images.githubusercontent.com/75282285/206519276-e6c918aa-9536-45f9-94f6-670006a18c13.png)
 
 d. Create a **secret id** via the previous role
 ```
