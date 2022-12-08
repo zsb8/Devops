@@ -25,6 +25,8 @@ docker exec -it $(docker ps -f name=vault_1 -q) sh
 export VAULT_ADDR='http://127.0.0.1:8200'
 vault operator init
 ```
+![image](https://user-images.githubusercontent.com/75282285/206345290-5d8184e6-1942-4be7-bb00-84407673c5aa.png)
+
 **Note:** Make a note of the output. This is the only time ever you see those unseal keys and root token. If you lose it, you won't be able to seal vault any more.
 
 b. **Unsealing** the vault </br>
