@@ -117,6 +117,10 @@ terraform init -backend-config=config/test/config.tfbackend
 ```
 ![image](https://user-images.githubusercontent.com/75282285/204052076-b4182cef-79e3-44fc-a740-6aff10f8aace.png)     
 
+
+![image](https://user-images.githubusercontent.com/75282285/206549260-ca052d48-9c5f-48ea-945d-33491f7b48f2.png)
+
+
 **Plan**
 ```
 terraform plan -var-file=config/test/test.tfvars -out deploy.tfplan
