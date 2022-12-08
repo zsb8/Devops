@@ -174,8 +174,8 @@ f. Write a **secret** via the new token
 ```
 vault kv put -mount=kv-v2 devops-secret/team-1 username2=root2 password2=changemeagain
 vault kv get -mount=kv-v2 devops-secret/team-1
-
 ```
+![image](https://user-images.githubusercontent.com/75282285/206527658-9f1e50e8-29cd-4a63-8ef0-0f882d8c2d9f.png)
 
 ## 4. Add the role id/secret id in Jenkins
 > Refer to https://plugins.jenkins.io/hashicorp-vault-plugin/#plugin-content-vault-app-role-credential
