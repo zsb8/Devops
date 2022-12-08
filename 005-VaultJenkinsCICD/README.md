@@ -243,6 +243,8 @@ k. Check the new file in Jenkins contain.
 You will find these new files and the contents.
 ![image](https://user-images.githubusercontent.com/75282285/206542044-65fb5803-ed7b-432a-b731-b083e8845908.png)
 
+l. If you have not role id/secret id in Jenkins, it will fail.
+![image](https://user-images.githubusercontent.com/75282285/206545305-fdb342bf-af8d-410c-af41-da128a986b7f.png)
 
 
 # <a name="post_project">Post Project</a>
