@@ -218,7 +218,7 @@ c. Select **"Git"** in **"SCM"** field</br>
 d. Add `https://github.com/chance2021/devopsdaydayup.git` in **"Repository URL"** field</br>
 e. Select your github credential in **"Credentials"**</br>
 f. Type `*/main` in **"Branch Specifier"** field</br>
-![image](https://user-images.githubusercontent.com/75282285/206533754-0776588e-9097-4e35-a592-56f056640af8.png)
+![image](https://user-images.githubusercontent.com/75282285/206541412-dd623aaf-299f-4741-822c-900e1bbe550f.png)
 
 g. Type `005-VaultJenkinsCICD/Jenkinsfile` in **"Script Path"**</br>
 h. Unselect **"Lightweight checkout"**</br>
