@@ -203,6 +203,7 @@ Login to your Jenkins website and go to **"Manage Jenkins"** -> **"Manage Creden
 **Password:** <your github personal access token> (please refer to [here](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token))</br>
 **ID:** (the id which will be referred in Jenkinsfile, i.g. github-token)</br>
 **Description:** Github token</br>
+![image](https://user-images.githubusercontent.com/75282285/206532665-9fd5f3dd-24ab-4f77-b152-98bff3ae543f.png)
 
 ## 6. Create a Jenkins Pipeline
 a. In the Jenkins portal, click **"New Item"** in the left navigation lane, and type the item name (i.g. first-project) and select **"Pipeline"**. Click **"OK"** to configure the pipeline.</br> 
