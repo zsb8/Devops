@@ -222,6 +222,7 @@ f. Type `*/main` in **"Branch Specifier"** field</br>
 
 g. Type `005-VaultJenkinsCICD/Jenkinsfile` in **"Script Path"**</br>
 h. Unselect **"Lightweight checkout"**</br>
+![image](https://user-images.githubusercontent.com/75282285/206534004-09fd14f5-9764-4b3c-9bf1-9ee83163dceb.png)
 
 # <a name="post_project">Post Project</a>
 Delete the docker-compose containers, as well as the volumes associated
