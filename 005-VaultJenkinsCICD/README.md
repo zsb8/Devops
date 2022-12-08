@@ -237,6 +237,7 @@ ref: https://github.com/hashicorp/vault/issues/6287#issuecomment-684125899
 [Vault Signed SSH Certificates](https://developer.hashicorp.com/vault/docs/secrets/ssh/signed-ssh-certificates)</br>
 
 
-## Issue 3: version in plugin.txt
+## Issue 3: version in plugins.txt
 ![WeChat Image_20221208090241](https://user-images.githubusercontent.com/75282285/206465712-5bfb442a-5d5d-4a8c-beb5-5f8da2c545e0.png)
+Solve: change the configuration-as-code's version in plugins.txt to 1569.vb_72405b_8029
 
