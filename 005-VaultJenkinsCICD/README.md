@@ -232,6 +232,7 @@ i. Check the log.
 
 j. Check the new file in Jenkins contain. 
 ![image](https://user-images.githubusercontent.com/75282285/206535861-690685a9-61f5-4ceb-940b-3af7c0f77453.png)
+You will find these new files and the contents.
 ![image](https://user-images.githubusercontent.com/75282285/206536645-edc8f15a-3bf2-4e98-bc59-ebf6de30dfa5.png)
 
 
