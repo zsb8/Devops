@@ -224,6 +224,10 @@ g. Type `005-VaultJenkinsCICD/Jenkinsfile` in **"Script Path"**</br>
 h. Unselect **"Lightweight checkout"**</br>
 ![image](https://user-images.githubusercontent.com/75282285/206534004-09fd14f5-9764-4b3c-9bf1-9ee83163dceb.png)
 
+h. Run it.
+![image](https://user-images.githubusercontent.com/75282285/206534327-37c8a00d-21a5-49f0-904e-7c3ed0b72142.png)
+
+
 # <a name="post_project">Post Project</a>
 Delete the docker-compose containers, as well as the volumes associated
 ```
