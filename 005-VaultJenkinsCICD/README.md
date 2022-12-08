@@ -2,6 +2,7 @@
 
 # Project Goal
 Integrate Vault into Jenkins pipeline, as well as the basic usage of Hashicorp Vault.
+Create a pipeline task in Jenkins, runs it. It will copy the 'Jenkinsfile' file into the Jenkins container and run shell commands. These shells will create 3 files in your Jenkins container, you can check their contents at the end.   
 
 # Table of Contents
 1. [Prerequisites](#prerequisites)
@@ -227,12 +228,17 @@ h. Unselect **"Lightweight checkout"**</br>
 h. Run it.
 ![image](https://user-images.githubusercontent.com/75282285/206534327-37c8a00d-21a5-49f0-904e-7c3ed0b72142.png)
 
-i. Check the log.
+i. Jenkins will run the shell file.
+This is the contents of 'Jenkinsfile'.
+![image](https://user-images.githubusercontent.com/75282285/206543080-86f5e4d4-c811-4f8f-b755-0b39ca74609c.png)
+
+
+j. Check the log.
 ![image](https://user-images.githubusercontent.com/75282285/206541670-ef2307c7-9766-4b64-9f8c-9201f130e4cd.png)
 
 
 
-j. Check the new file in Jenkins contain. 
+k. Check the new file in Jenkins contain. 
 ![image](https://user-images.githubusercontent.com/75282285/206535861-690685a9-61f5-4ceb-940b-3af7c0f77453.png)
 You will find these new files and the contents.
 ![image](https://user-images.githubusercontent.com/75282285/206542044-65fb5803-ed7b-432a-b731-b083e8845908.png)
