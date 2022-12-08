@@ -180,7 +180,12 @@ vault kv get -mount=kv-v2 devops-secret/team-1
 ## 4. Add the role id/secret id in Jenkins
 > Refer to https://plugins.jenkins.io/hashicorp-vault-plugin/#plugin-content-vault-app-role-credential
 
-Login to your Jenkins website and go to **"Manage Jenkins"** -> **"Manage Credentials"** ->  **"System"** -> **"Global credentials (unrestricted)"** -> Click **"Add Credentials"** and you should fill out the page in below selection: </br>
+Login to your Jenkins website.
+![image](https://user-images.githubusercontent.com/75282285/206530163-fcc03811-d9d0-4b53-9298-421fcc61383d.png)
+
+Go to **"Manage Jenkins"** -> **"Manage Credentials"** ->  **"System"** -> **"Global credentials (unrestricted)"** -> Click **"Add Credentials"** and you should fill out the page in below selection: </br>
+![image](https://user-images.githubusercontent.com/75282285/206530541-8585d4ea-8c0a-4ba6-ae0c-38a4f468ddd2.png)
+
 **Kind:** Vault App Role Credential</br>
 **Scope:** Global (Jenkins,nodes,items,all child items,etc)</br>
 **Role ID:** <ROLE_ID from previous step></br>
