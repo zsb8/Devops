@@ -28,6 +28,17 @@ vault operator init
 ![image](https://user-images.githubusercontent.com/75282285/206345290-5d8184e6-1942-4be7-bb00-84407673c5aa.png)
 
 **Note:** Make a note of the output. This is the only time ever you see those unseal keys and root token. If you lose it, you won't be able to seal vault any more.
+```
+/vault/data # export VAULT_ADDR='http://127.0.0.1:8200'
+/vault/data # vault operator init
+Unseal Key 1: ezsvewsxANkLCFxkQKVP+XNaO8ivlNkBxSTYGnu7JBBj
+Unseal Key 2: 5K/9CESOL1KCYYFeQc0vRzBtKEYusDT+YONDhgPYxZng
+Unseal Key 3: E0rsdCm2dCt/fUgXZeftL3p9IgvDH7oivXDjVI/rRpa9
+Unseal Key 4: JdjQ7gbPHgQZAB5UWQ7rV1A5wpZ5OkWVeVKhTYMTZotM
+Unseal Key 5: /knntQuDnzswhIK1XhpZh77ByheqWFOi69FehuxtIq3N
+
+Initial Root Token: hvs.mzUOQ9nFDC8F8U1nPLX0Kb6h
+```
 
 b. **Unsealing** the vault </br>
 Type `vault operator unseal <unseal key>`. The unseal keys are from previous output. You will need at lease **3 keys** to unseal the vault. </br>
