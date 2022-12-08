@@ -126,6 +126,7 @@ vault policy write first-policy policy.hcl
 vault policy list
 vault policy read first-policy
 ```
+![image](https://user-images.githubusercontent.com/75282285/206518833-8b4fb861-acdf-4827-85d6-50d4c6039159.png)
 
 b. **Enable approle**
 ```
