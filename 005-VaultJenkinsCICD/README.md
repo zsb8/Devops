@@ -87,6 +87,8 @@ token_policies       ["root"]
 identity_policies    []
 policies             ["root"]
 ```
+![image](https://user-images.githubusercontent.com/75282285/206518099-c4821d8e-d84c-411b-b33b-9ef26a948537.png)
+
 
 ## 2. Enable Vault KV Secrets Engine Version 2
 > Refer to https://developer.hashicorp.com/vault/docs/secrets/kv/kv-v2
