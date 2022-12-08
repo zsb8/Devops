@@ -168,6 +168,7 @@ echo $VAULT_TOKEN
 VAULT_TOKEN=$(echo $VAULT_TOKEN|tr -d '"')
 vault token lookup | grep policies
 ```
+![image](https://user-images.githubusercontent.com/75282285/206527342-5bb1a63b-ae2d-4406-a67c-d41aaa10fee6.png)
 
 f. Write a **secret** via the new token
 ```
