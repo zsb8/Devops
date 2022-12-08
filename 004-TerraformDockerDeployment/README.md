@@ -20,7 +20,7 @@ Gitlab will store the statu file of Terraform.
 
 # <a name="project_steps">Project Steps</a>
 
-## 1. Deploy a gitlab server to store the terraform state file
+## 1. Deploy a Gitlab server to store the terraform state file
 ```bash
 git clone https://github.com/chance2021/devopsdaydayup.git
 cd devopsdaydayup/004-TerraformDockerDeployment
