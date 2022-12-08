@@ -109,8 +109,9 @@ Key         Value
 ---         -----
 password    changeme
 username    root
-
 ```
+![image](https://user-images.githubusercontent.com/75282285/206518625-44c3b8e1-ad89-4ade-95a5-ed843d9248ea.png)
+
 > Note: Since version 2 kv has prefixed `data/`, your secret path will be `kv-v2/data/devops-secret`, instead of `kv-v2/devops-secret`
 
 ## 3. Write a Vault Policy and create a token
