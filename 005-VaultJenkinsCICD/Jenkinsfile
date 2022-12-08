@@ -22,7 +22,7 @@ node {
         sh 'echo $testing >> hello_world.txt'
         sh 'cat hello_world.txt'
         sh 'echo $testing_again|tee testing_again.txt'
-		sh 'echo "Every people know: Zsb is a good man! \n world" > hello_world.txt'
+	sh 'echo "Every people know: Zsb is a good man! \n world" > hello_world.txt'
         sh 'cat testing_again.txt'
     }
 }
