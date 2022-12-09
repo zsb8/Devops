@@ -37,6 +37,8 @@ b. Fetch the **password** for `admin` user</br>
 ```
 docker exec $(docker ps --filter name=nexus_1 -q) cat /nexus-data/admin.password
 ```
+![image](https://user-images.githubusercontent.com/75282285/206592941-2e4edfa9-9258-4030-b394-3070208149da.png)
+
 c. Click **"Sign In"** in the top right and type username `admin`, as well as the password fetched in the previous step</br>
 d. Follow the **wizard** and reset your password. Select **"Enable anonymous access"** and click **"Next"**->**"Finish"** to complete the guide.</br>
 e. Click **Gear icon** in the top and click **"Repositories"** in **"Repository"** section. Click **"Create repository"** to create a new repo.</br>
