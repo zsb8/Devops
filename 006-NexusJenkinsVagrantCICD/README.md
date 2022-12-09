@@ -40,7 +40,11 @@ docker exec $(docker ps --filter name=nexus_1 -q) cat /nexus-data/admin.password
 ![image](https://user-images.githubusercontent.com/75282285/206592941-2e4edfa9-9258-4030-b394-3070208149da.png)
 
 c. Click **"Sign In"** in the top right and type username `admin`, as well as the password fetched in the previous step</br>
-d. Follow the **wizard** and reset your password. Select **"Enable anonymous access"** and click **"Next"**->**"Finish"** to complete the guide.</br>
+d. Follow the **wizard** and reset your password. </br>
+![image](https://user-images.githubusercontent.com/75282285/206593040-fd5a05fc-9d72-4c4c-94c4-4d4112d03564.png)
+Select **"Enable anonymous access"** and click **"Next"**->**"Finish"** to complete the guide.</br>
+![image](https://user-images.githubusercontent.com/75282285/206593084-aa0eb65e-29ca-4f65-923f-a2c348882bf6.png)
+
 e. Click **Gear icon** in the top and click **"Repositories"** in **"Repository"** section. Click **"Create repository"** to create a new repo.</br>
 ![nexus-create-repo](images/nexus-create-repo.png)
 f. Select **"maven2(hosted)"** and fill below fields as instructed: </br>
