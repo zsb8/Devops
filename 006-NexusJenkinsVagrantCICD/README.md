@@ -64,7 +64,7 @@ g. To create a new user, go to **"Security"** -> **"Users"** -> Click **"Create 
 **Last name:** User</br>
 **Email:** jenkins.user@gmail.com</br>
 **Password:**  *(Type your password)*, such as `123456` </br>
-**Confirm password:**  *(Type the same password you entered above)* , such as *123456* </br>
+**Confirm password:**  *(Type the same password you entered above)* , such as `123456` </br>
 **Status:** Active</br>
 **Roles:** nx-admin</br> 
 ![image](https://user-images.githubusercontent.com/75282285/206595741-5b3d2c39-0679-4a5c-b3c0-e7a406e50950.png)
