@@ -117,6 +117,9 @@ You can login to the Nexus website (http://192.168.50.164:8081) and go to **"Bro
 ![nexus-repo-configuration](images/nexus-repo-configuration.png)
 
 ## 5. Deploy a Tomcat server via Vagrant
+Install Vagrant.
+![image](https://user-images.githubusercontent.com/75282285/206619473-b762eb32-4225-44c5-805d-d36c51c316c8.png)
+
 Run below command to start up a Vagrant VM:
 ```
 vagrant up
