@@ -216,7 +216,12 @@ a. In the Jenkins portal, click **"New Item"** in the left navigation lane, and 
 
 b. Go to **"Pipeline"** section and select **"Pipeline script from SCM"** in the **"Definition"** field</br>
 c. Select **"Git"** in **"SCM"** field</br>
-d. Add `https://github.com/chance2021/devopsdaydayup.git` in **"Repository URL"** field</br>
+d. Add `https://github.com/zsb8/Devops.git` in **"Repository URL"** field</br>
+Jinkins will get the file which named 'Jenkinsfile' in this Github reposity. In `Jenkinsfile` file, you will find these code to let Jenkins will let this pipeline task to visit Vault to get the id verfiy firstly. 
+![image](https://user-images.githubusercontent.com/75282285/206594417-ba8f6e88-d5b7-479d-ab46-9bafaffa1d2a.png)
+
+
+
 e. Select your github credential in **"Credentials"**</br>
 f. Type `*/main` in **"Branch Specifier"** field</br>
 ![image](https://user-images.githubusercontent.com/75282285/206541412-dd623aaf-299f-4741-822c-900e1bbe550f.png)
