@@ -110,7 +110,7 @@ Click **"Save"**</br>
 
 ## 4. Launch the Jenkins pipeline
 Go to **"Dashboard"** -> Click **"first-project"** pipeline -> Click **"Build Now"**, then the Jenkins pipeline will compile the app to a war file and upload to the Nexus repository. </br>
-You can login to the Nexus website (http://0.0.0.0:8081) and go to **"Browse"** section, and then click **"maven-nexus-repo"**, you should be able to see the artifacts just uploaded.
+You can login to the Nexus website (http://192.168.50.164:8081) and go to **"Browse"** section, and then click **"maven-nexus-repo"**, you should be able to see the artifacts just uploaded.
 ![nexus-repo-configuration](images/nexus-repo-configuration.png)
 
 ## 5. Deploy a Tomcat server via Vagrant
