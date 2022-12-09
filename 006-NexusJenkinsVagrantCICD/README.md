@@ -109,7 +109,10 @@ Click **"Save"**</br>
 ![image](https://user-images.githubusercontent.com/75282285/206598578-dffbc850-ec3d-46b0-a8e5-2f54cf781f40.png)
 
 ## 4. Launch the Jenkins pipeline
-Go to **"Dashboard"** -> Click **"first-project"** pipeline -> Click **"Build Now"**, then the Jenkins pipeline will compile the app to a war file and upload to the Nexus repository. </br>
+Go to **"Dashboard"** -> Click **"first-project"** pipeline -> Click **"Build Now"**
+![image](https://user-images.githubusercontent.com/75282285/206598847-867e1853-3882-4fad-bb87-b1a0a38157e1.png)
+
+Then the Jenkins pipeline will compile the app to a war file and upload to the Nexus repository. </br>
 You can login to the Nexus website (http://192.168.50.164:8081) and go to **"Browse"** section, and then click **"maven-nexus-repo"**, you should be able to see the artifacts just uploaded.
 ![nexus-repo-configuration](images/nexus-repo-configuration.png)
 
