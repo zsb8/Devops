@@ -121,6 +121,7 @@ Install Vagrant.
 https://developer.hashicorp.com/vagrant/downloads <br>
 ![image](https://user-images.githubusercontent.com/75282285/206619473-b762eb32-4225-44c5-805d-d36c51c316c8.png)
 
+Install Virtualbox.  https://tecadmin.net/how-to-install-virtualbox-on-ubuntu-22-04/ <br> 
 Run below command to start up a Vagrant VM:
 ```
 vagrant up
@@ -187,6 +188,10 @@ https://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios
 
 ## Issue4: Error while connecting to libvirt
 ![image](https://user-images.githubusercontent.com/75282285/206710663-ddb581de-f96a-496b-8185-e7039803eb28.png)
+
+## Issue5: AMD-v
+Can't run bagrant up because AMD-V is not available.
+![image](https://user-images.githubusercontent.com/75282285/206741288-924dda47-8646-459c-b0d8-ecba7c364a5c.png)
 
 
 # <a name="reference">Reference</a>
