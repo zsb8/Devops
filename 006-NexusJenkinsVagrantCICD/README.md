@@ -57,14 +57,17 @@ Click **"Create repository"** in the bottom</br>
 
 
 g. To create a new user, go to **"Security"** -> **"Users"** -> Click **"Create local user"** and fill below fields as instructed: </br>
+![image](https://user-images.githubusercontent.com/75282285/206595499-0025562e-32e7-4369-8afa-432c26610fd8.png)
+![image](https://user-images.githubusercontent.com/75282285/206595701-51de33e8-6ba6-4e7f-a607-95ad496a1680.png)
 **ID:** `jenkins-user` </br>
 **First name:** Jenkins</br>
 **Last name:** User</br>
 **Email:** jenkins.user@gmail.com</br>
-**Password:**  *(Type your password)* </br>
-**Confirm password:**  *(Type the same password you entered above)*  </br>
+**Password:**  *(Type your password)*, such as *123456* </br>
+**Confirm password:**  *(Type the same password you entered above)* , such as *123456* </br>
 **Status:** Active</br>
 **Roles:** nx-admin</br> 
+![image](https://user-images.githubusercontent.com/75282285/206595741-5b3d2c39-0679-4a5c-b3c0-e7a406e50950.png)
 
 ## 3. Configure Jenkins
 a. Login to your Jenkins website (http://0.0.0.0:8080) and go to **"Manage Jenkins"** -> **"Manage Credentials"** ->  **"System"** -> **"Global credentials (unrestricted)"** -> Click **"Add Credentials"** and you should fill out the page in below selection: </br>
