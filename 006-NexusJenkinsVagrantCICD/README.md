@@ -70,7 +70,11 @@ g. To create a new user, go to **"Security"** -> **"Users"** -> Click **"Create 
 ![image](https://user-images.githubusercontent.com/75282285/206595741-5b3d2c39-0679-4a5c-b3c0-e7a406e50950.png)
 
 ## 3. Configure Jenkins
-a. Login to your Jenkins website (http://0.0.0.0:8080) and go to **"Manage Jenkins"** -> **"Manage Credentials"** ->  **"System"** -> **"Global credentials (unrestricted)"** -> Click **"Add Credentials"** and you should fill out the page in below selection: </br>
+a. Login to your Jenkins website (http://192.168.50.164:8080) and go to **"Manage Jenkins"** -> **"Manage Credentials"** 
+![image](https://user-images.githubusercontent.com/75282285/206596072-a566fa88-b91b-4208-9670-a9e70835544f.png)
+Then go to  **"System"** -> **"Global credentials (unrestricted)"** -> Click **"Add Credentials"** 
+![image](https://user-images.githubusercontent.com/75282285/206596162-1744d792-ecc7-4324-8cfd-2de99a78ea59.png)
+You should fill out the page in below selection: </br>
 > Note: The **username** and **password** is in `.env` file </br>
 
 **Kind:** Username with password</br>
