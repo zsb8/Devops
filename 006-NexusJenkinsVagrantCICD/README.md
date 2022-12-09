@@ -99,7 +99,9 @@ i. Unselect **"Lightweight checkout"** and click "Apply" to complete the creatio
 ![image](https://user-images.githubusercontent.com/75282285/206598053-600dad5e-694d-41d8-a8f0-cb138dbb9180.png)
 
 
-j. To add maven tool, go back to **"Dashboard"** -> **"Manage Jenkins"** -> **"Global Tool Configuration"** -> Scroll down to **"Maven"** section and click **"Add Maven"**. Then fill out below fields as instructed:</br>
+j. To add maven tool, go back to **"Dashboard"** -> **"Manage Jenkins"** -> **"Global Tool Configuration"** 
+![image](https://user-images.githubusercontent.com/75282285/206598272-23069659-fb3f-4f9f-976e-dbf8cb92d892.png)
+Then Scroll down to **"Maven"** section and click **"Add Maven"**. Then fill out below fields as instructed:</br>
 **Name:** m3</br>
 **Install automaticall** selected</br>
 **Version:** 3.8.6</br>
