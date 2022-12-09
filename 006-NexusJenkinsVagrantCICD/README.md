@@ -53,6 +53,9 @@ f. Select **"maven2(hosted)"** and fill below fields as instructed: </br>
 **Deployment policy:** Allow redeploy</br>
 ![nexus-create-repo-2](images/nexus-create-repo-2.png)
 Click **"Create repository"** in the bottom</br>
+![image](https://user-images.githubusercontent.com/75282285/206593414-fc5d30f4-fbb4-44aa-a3f2-741a2f8d8b91.png)
+
+
 g. To create a new user, go to **"Security"** -> **"Users"** -> Click **"Create local user"** and fill below fields as instructed: </br>
 **ID:** `jenkins-user` </br>
 **First name:** Jenkins</br>
