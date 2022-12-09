@@ -27,10 +27,10 @@ docker-compose up -d
 ![image](https://user-images.githubusercontent.com/75282285/206592364-1106da4e-bb3e-4015-9b1a-14845cf4564b.png)
 
 ## 2. Configure Nexus
-a. Open a browser and **login to** Nexus home page (http://192.168.50.164:8081)</br>
+a. Enter the Nexus container and find the username and password</br>
 The username and password to login to Nexus are placed in Nexus contain, the path is `/nexus-data`, the password file is `admin.password`. 
 ![image](https://user-images.githubusercontent.com/75282285/206592514-c4839542-8828-46d3-9d78-7e7de57588cd.png)
-
+ Open a browser and **login to** Nexus home page (http://192.168.50.164:8081)</br>
 ![image](https://user-images.githubusercontent.com/75282285/206592296-2d625285-3805-46fe-8bf1-c61465632b4f.png)
 
 b. Fetch the **password** for `admin` user</br>
