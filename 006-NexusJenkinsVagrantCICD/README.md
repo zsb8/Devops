@@ -118,6 +118,7 @@ You can login to the Nexus website (http://192.168.50.164:8081) and go to **"Bro
 
 ## 5. Deploy a Tomcat server via Vagrant
 Install Vagrant.
+https://developer.hashicorp.com/vagrant/downloads <br>
 ![image](https://user-images.githubusercontent.com/75282285/206619473-b762eb32-4225-44c5-805d-d36c51c316c8.png)
 
 Run below command to start up a Vagrant VM:
