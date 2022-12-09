@@ -126,6 +126,7 @@ Run below command to start up a Vagrant VM:
 ```
 vagrant up
 ```
+But I failed in this step becuase my VMware can't use AMD-V. 
 
 ## 6. Download the war file and deploy to the Tomcat server
 Once the deployment is done, you can login to the Tomcat Vagrant VM and download the war from the Nexus repo. You should be able to see the url link to download the war file in the Nexus web page. Just make sure to replace the IP address `0.0.0.0` to the actual IP of your host (running `ifconfig` to check your host IP).
