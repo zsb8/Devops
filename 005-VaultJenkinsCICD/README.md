@@ -116,7 +116,7 @@ username    root
 > Note: Since version 2 kv has prefixed `data/`, your secret path will be `kv-v2/data/devops-secret`, instead of `kv-v2/devops-secret`
 
 ## 3. Write a Vault Policy and create a token
-a. **Write** a policy
+### a. **Write** a policy
 ```
 cat > policy.hcl  <<EOF
 path "kv-v2/data/devops-secret/*" {
@@ -128,13 +128,13 @@ vault policy list
 vault policy read first-policy
 ```
 
-b. **Enable approle**
+### b. **Enable approle**
 ```
 vault auth enable approle
 ```
 ![image](https://user-images.githubusercontent.com/75282285/206519049-4550f60e-8324-407d-8870-6f7c9de1d1bf.png)
 
-c. Create an **role**
+### c. Create an **role**
 ```
 vault write auth/approle/role/first-role \
     secret_id_ttl=10000m \
@@ -151,7 +151,7 @@ echo $ROLE_ID
 > **Note:** Please make a note as it will be needed when configuring Jenkins credential
 ![image](https://user-images.githubusercontent.com/75282285/206519276-e6c918aa-9536-45f9-94f6-670006a18c13.png)
 In this case, the role_id is c8329502-e4cf-4c7f-10fd-5d3dfabea474     
-d. Create a **secret id** via the previous role
+### d. Create a **secret id** via the previous role
 ```
 export SECRET_ID="$(vault write -f -field=secret_id auth/approle/role/first-role/secret-id)"
 echo $SECRET_ID
@@ -161,7 +161,7 @@ echo $SECRET_ID
 In this case, the Secret_id is: d4fc7b52-92a9-bc77-6f3c-a1661d7df1ef     
 
 
-e. Create a **token** with the role ID and secret ID
+### e. Create a **token** with the role ID and secret ID
 ```
 apk add jq
 export VAULT_TOKEN=$(vault write auth/approle/login role_id="$ROLE_ID" secret_id="$SECRET_ID" -format=json|jq .auth.client_token)
@@ -211,44 +211,46 @@ Login to your Jenkins website and go to **"Manage Jenkins"** -> **"Manage Creden
 
 
 ## 6. Create a Jenkins Pipeline
-a. In the Jenkins portal, click **"New Item"** in the left navigation lane, and type the item name (i.g. first-project) and select **"Pipeline"**. Click **"OK"** to configure the pipeline.</br> 
+### a. In the Jenkins portal, click **"New Item"** in the left navigation lane, and type the item name (i.g. first-project) and select **"Pipeline"**. Click **"OK"** to configure the pipeline.</br> 
 ![image](https://user-images.githubusercontent.com/75282285/206533055-c6dd4abc-74bc-446b-bc5a-27bb128d565e.png)
 
-b. Go to **"Pipeline"** section and select **"Pipeline script from SCM"** in the **"Definition"** field</br>
-c. Select **"Git"** in **"SCM"** field</br>
-d. Add `https://github.com/zsb8/Devops.git` in **"Repository URL"** field</br>
+### b. Go to **"Pipeline"** section and select **"Pipeline script from SCM"** in the **"Definition"** field</br>
+### c. Select Github</br> 
+Select **"Git"** in **"SCM"** field</br>
+### d. Add your repository</br>
+Add `https://github.com/zsb8/Devops.git` in **"Repository URL"** field</br>
 Jinkins will get the file which named 'Jenkinsfile' in this Github reposity. In `Jenkinsfile` file, you will find these code to let Jenkins will let this pipeline task to visit Vault to get the id verfiy firstly. 
 ![image](https://user-images.githubusercontent.com/75282285/206594417-ba8f6e88-d5b7-479d-ab46-9bafaffa1d2a.png)
 
 
 
-e. Select your github credential in **"Credentials"**</br>
-f. Type `*/main` in **"Branch Specifier"** field</br>
+### e. Select your github credential in **"Credentials"**</br>
+### f. Type `*/main` in **"Branch Specifier"** field</br>
 ![image](https://user-images.githubusercontent.com/75282285/206541412-dd623aaf-299f-4741-822c-900e1bbe550f.png)
 
-g. Type `005-VaultJenkinsCICD/Jenkinsfile` in **"Script Path"**</br>
-h. Unselect **"Lightweight checkout"**</br>
+### g. Type `005-VaultJenkinsCICD/Jenkinsfile` in **"Script Path"**</br>
+### h. Unselect **"Lightweight checkout"**</br>
 ![image](https://user-images.githubusercontent.com/75282285/206534004-09fd14f5-9764-4b3c-9bf1-9ee83163dceb.png)
 
-h. Run it.
+### i. Run it.
 ![image](https://user-images.githubusercontent.com/75282285/206534327-37c8a00d-21a5-49f0-904e-7c3ed0b72142.png)
 
-i. Jenkins will run the shell file.             
+### j. Jenkins will run the shell file.             
 This is the contents of 'Jenkinsfile'.             
 ![image](https://user-images.githubusercontent.com/75282285/206543080-86f5e4d4-c811-4f8f-b755-0b39ca74609c.png)
 
 
-j. Check the log.
+### k. Check the log.
 ![image](https://user-images.githubusercontent.com/75282285/206541670-ef2307c7-9766-4b64-9f8c-9201f130e4cd.png)
 
 
 
-k. Check the new file in Jenkins contain. 
+### l. Check the new file in Jenkins contain. 
 ![image](https://user-images.githubusercontent.com/75282285/206535861-690685a9-61f5-4ceb-940b-3af7c0f77453.png)
 You will find these new files and the contents.
 ![image](https://user-images.githubusercontent.com/75282285/206542044-65fb5803-ed7b-432a-b731-b083e8845908.png)
 
-l. If no Global credential, the pipeline can't run.        
+### m. If no Global credential, the pipeline can't run.        
 If you have not role id/secret id in Jenkins, it will befailed. So, I delete the Global credential (I created before, named vault-app-role). Then run the pipeline, you will find it is failed.     
 ![image](https://user-images.githubusercontent.com/75282285/206545305-fdb342bf-af8d-410c-af41-da128a986b7f.png)
 
