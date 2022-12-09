@@ -40,7 +40,7 @@ docker exec $(docker ps --filter name=nexus_1 -q) cat /nexus-data/admin.password
 ![image](https://user-images.githubusercontent.com/75282285/206592941-2e4edfa9-9258-4030-b394-3070208149da.png)
 
 c. Click **"Sign In"** in the top right and type username `admin`, as well as the password fetched in the previous step</br>
-d. Follow the **wizard** and reset your password. Such as *123456*</br>
+d. Follow the **wizard** and reset your password. Such as `123456`</br>
 ![image](https://user-images.githubusercontent.com/75282285/206593040-fd5a05fc-9d72-4c4c-94c4-4d4112d03564.png)
 Select **"Enable anonymous access"** and click **"Next"**->**"Finish"** to complete the guide.</br>
 ![image](https://user-images.githubusercontent.com/75282285/206593084-aa0eb65e-29ca-4f65-923f-a2c348882bf6.png)
@@ -63,7 +63,7 @@ g. To create a new user, go to **"Security"** -> **"Users"** -> Click **"Create 
 **First name:** Jenkins</br>
 **Last name:** User</br>
 **Email:** jenkins.user@gmail.com</br>
-**Password:**  *(Type your password)*, such as *123456* </br>
+**Password:**  *(Type your password)*, such as `123456` </br>
 **Confirm password:**  *(Type the same password you entered above)* , such as *123456* </br>
 **Status:** Active</br>
 **Roles:** nx-admin</br> 
@@ -75,12 +75,12 @@ a. Login to your Jenkins website (http://192.168.50.164:8080) and go to **"Manag
 Then go to  **"System"** -> **"Global credentials (unrestricted)"** -> Click **"Add Credentials"** 
 ![image](https://user-images.githubusercontent.com/75282285/206596162-1744d792-ecc7-4324-8cfd-2de99a78ea59.png)
 You should fill out the page in below selection: </br>
-> Note: The **username** and **password** is in `.env` file </br>
+> Note: The **username** is in `.env` file </br>
 
 **Kind:** Username with password</br>
 **Scope:** Global(Jenkins, nodes, items, all child items, etc)</br>
 **Username:** jenkins-user</br>
-**Password:** *(Type the password you set in previous step)*</br>
+**Password:** *(Type the password you set in previous step)*, such as `123456`</br>
 **ID:** nexus</br>
 **Description:** nexus credential</br>
 b. To create a new pipeline, go back to Dashboard, click **"New Item"** in the left navigation lane, and type the item name (i.g. `first-project`) and select **"Pipeline"**. Click **"OK"** to configure the pipeline.</br>
