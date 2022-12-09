@@ -305,5 +305,5 @@ Solve: change the configuration-as-code's version in plugins.txt to 1569.vb_7240
 [Vault Getting Started Deploy](https://developer.hashicorp.com/vault/tutorials/getting-started/getting-started-deploy)</br>
 [Vault Store The Google API Key](https://developer.hashicorp.com/vault/tutorials/secrets-management/static-secrets#store-the-google-api-key)</br>
 [Vault Signed SSH Certificates](https://developer.hashicorp.com/vault/docs/secrets/ssh/signed-ssh-certificates)</br>
-
+[Jenkins plugins](https://plugins.jenkins.io/hashicorp-vault-plugin/#plugin-content-vault-app-role-credential)<br>
 
