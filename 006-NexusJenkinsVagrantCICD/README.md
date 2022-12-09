@@ -184,6 +184,11 @@ VBoxManage: error: Details: code NS_ERROR_FAILURE (0x80004005), component Consol
 ```
 **Solution:**
 https://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/
+
+## Issue4: Error while connecting to libvirt
+![image](https://user-images.githubusercontent.com/75282285/206710663-ddb581de-f96a-496b-8185-e7039803eb28.png)
+
+
 # <a name="reference">Reference</a>
 [Integrating Ansible Jenkins CICD Process](https://www.redhat.com/en/blog/integrating-ansible-jenkins-cicd-process) </br>
 
