@@ -70,7 +70,7 @@ g. To create a new user, go to **"Security"** -> **"Users"** -> Click **"Create 
 ![image](https://user-images.githubusercontent.com/75282285/206595741-5b3d2c39-0679-4a5c-b3c0-e7a406e50950.png)
 
 ## 3. Configure Jenkins
-a. Login to your Jenkins website (http://192.168.50.164:8080) and go to **"Manage Jenkins"** -> **"Manage Credentials"** 
+### a. Login to your Jenkins website (http://192.168.50.164:8080) and go to **"Manage Jenkins"** -> **"Manage Credentials"** 
 ![image](https://user-images.githubusercontent.com/75282285/206596072-a566fa88-b91b-4208-9670-a9e70835544f.png)
 Then go to  **"System"** -> **"Global credentials (unrestricted)"** -> Click **"Add Credentials"** 
 ![image](https://user-images.githubusercontent.com/75282285/206596162-1744d792-ecc7-4324-8cfd-2de99a78ea59.png)
@@ -83,14 +83,22 @@ You should fill out the page in below selection: </br>
 **Password:** *(Type the password you set in previous step)*, such as `123456`</br>
 **ID:** nexus</br>
 **Description:** nexus credential</br>
-b. To create a new pipeline, go back to Dashboard, click **"New Item"** in the left navigation lane, and type the item name (i.g. `first-project`) and select **"Pipeline"**. Click **"OK"** to configure the pipeline.</br>
+![image](https://user-images.githubusercontent.com/75282285/206597432-ffe9a1b6-afa6-4959-92d3-70e8f95428d5.png)
+
+### b. Creat the pipeline
+To create a new pipeline, go back to Dashboard, click **"New Item"** in the left navigation lane, and type the item name (i.g. `first-project`) and select **"Pipeline"**. Click **"OK"** to configure the pipeline.</br>
+![image](https://user-images.githubusercontent.com/75282285/206597540-1c6f9962-ddc3-45e0-84ec-8caa54238f11.png)
+
 c. Go to **"Pipeline"** section and select **"Pipeline script from SCM"** in the **"Definition"** field</br>
 d. Select **"Git"** in **"SCM"** field</br>
-e. Add `https://github.com/chance2021/devopsdaydayup.git` in **"Repository URL"** field</br>
+e. Add `https://github.com/zsb8/Devops.git` in **"Repository URL"** field</br>
 f. Select your github credential in **"Credentials"**</br>
 g. Type `*/main` in **"Branch Specifier"** field</br>
 h. Type `006-NexusJenkinsVagrantCICD/Jenkinsfile` in **"Script Path"**</br>
 i. Unselect **"Lightweight checkout"** and click "Apply" to complete the creation</br>
+![image](https://user-images.githubusercontent.com/75282285/206598053-600dad5e-694d-41d8-a8f0-cb138dbb9180.png)
+
+
 j. To add maven tool, go back to **"Dashboard"** -> **"Manage Jenkins"** -> **"Global Tool Configuration"** -> Scroll down to **"Maven"** section and click **"Add Maven"**. Then fill out below fields as instructed:</br>
 **Name:** m3</br>
 **Install automaticall** selected</br>
