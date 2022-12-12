@@ -126,36 +126,7 @@ Run below command to start up a Vagrant VM:
 ```
 vagrant up
 ```
-But I failed in this step becuase my VMware can't use AMD-V. 
 
-## 6. Download the war file and deploy to the Tomcat server
-Once the deployment is done, you can login to the Tomcat Vagrant VM and download the war from the Nexus repo. You should be able to see the url link to download the war file in the Nexus web page. Just make sure to replace the IP address `0.0.0.0` to the actual IP of your host (running `ifconfig` to check your host IP).
-![nexus-war-download-url](images/nexus-war-download-url.png)
-```
-vagrant ssh
-cd /var/lib/tomcat9/webapp/
-sudo wget http://<your_host_IP>:8081/repository/maven-nexus-repo/sparkjava-hello-world/sparkjava-hello-world/1.0/sparkjava-hello-world-1.0.war 
-```
-Wait for **2 mins** and then you can see the war file is unzip
-```
-vagrant@vagrant:/var/lib/tomcat9/webapps$ ls
-ROOT  sparkjava-hello-world-1.0  sparkjava-hello-world-1.0.war
-```
-Then type `exit` to exit the Vagrant VM and type below URL in yoru browser, and you should be able to see the "Hello World" page
-```
-http://0.0.0.0:8088/sparkjava-hello-world-1.0/hello
-```
-![helloworld](images/helloworld.png)
-
-# <a name="post_project">Post Project</a>
-Stop/Remove the Jenkins/Nexus containers
-```
-docker-compose down -v
-```
-Stop/Remove the Vagrant VM
-```
-vagrant destroy
-```
 
 # <a name="troubleshooting">Troubleshooting</a>
 ## Issue 1: Fail to maven build
