@@ -1,2 +1,2 @@
 # Devops
-Seet the README.md in every subfolder.
+Read the README.md in every subfolder.
