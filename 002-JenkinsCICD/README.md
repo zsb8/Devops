@@ -1,7 +1,7 @@
 
 
 # Project Name: Jenkins CICD Pipeline
-I created this sample code, which included a Jenkins CI/CD pipeline. This pipeline was designed to pull the source code from GitHub and redeploy the Docker container on the local host.
+I created this sample code, which includes a Jenkins CI/CD pipeline. The pipeline is designed to pull the source code from GitHub and redeploy the Docker container on the local host. Additionally, Jenkins can also be used to update AWS ECR.
 
 # Project Goal
 Setup/configure Jenkins as CICD pipeline. Familiarize with Jenkinsfile.
